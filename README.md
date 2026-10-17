@@ -4,6 +4,8 @@
 
 > 选品场景的真实痛点：旅行社/定制师同时拿着 N 份线路说明书，靠人肉逐页翻找「几天几晚、住什么、含不含滑雪、送不送旅拍」。trip-compare 把这件事压缩到一条命令。
 
+**[▶ 在线 Demo](https://070605yanghao.github.io/trip-compare/)** —— 合成样品对比报告，浏览器直接打开；另有 [真实四线路对比示例](https://070605yanghao.github.io/trip-compare/beijiang-report.html)。
+
 ## 创新点
 
 - **双引擎解析**：规则引擎（零成本、秒出、离线可用）做基线；配置 LLM（任意 OpenAI 兼容接口）后自动升级，结构化精度由模型兜底，LLM 失败自动回退规则结果，永不阻塞。

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>样品对比</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+     background:#f4f7fd;color:#111a2e;line-height:1.65}
+header{background:linear-gradient(135deg,#0b2a6b,#1557e8 55%,#3d7dff);color:#fff;padding:44px 0 38px}
+.hwrap{max-width:1240px;margin:0 auto;padding:0 24px}
+h1{font-size:30px;font-weight:800}
+h1 span{color:#ffd08a}
+.sub{margin-top:10px;font-size:14px;color:rgba(255,255,255,.8)}
+.meta{margin-top:14px;font-size:12px;color:rgba(255,255,255,.6)}
+.wrap{max-width:1240px;margin:0 auto;padding:0 24px 64px}
+section{margin-top:40px}
+.stitle{display:flex;align-items:center;gap:10px;margin-bottom:16px}
+.stitle .bar{width:4px;height:20px;border-radius:3px;background:#1557e8}
+.stitle h2{font-size:19px;font-weight:800}
+.stitle small{font-size:12px;color:#77809a}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}
+.card{background:#fff;border:1px solid #e3e8f2;border-radius:14px;padding:16px;position:relative;overflow:hidden}
+.card .cbar{position:absolute;inset:0 0 auto 0;height:4px;background:linear-gradient(90deg,#1557e8,#5b93ff)}
+.card .code{font-size:11px;font-weight:700;letter-spacing:1px;color:#77809a}
+.card h3{font-size:15px;font-weight:800;margin:4px 0 8px;line-height:1.4}
+.card .days{display:inline-block;font-size:11px;font-weight:700;padding:2px 9px;border-radius:6px;
+            background:#eaf0ff;color:#1557e8}
+.card p{font-size:12px;color:#3c4761;margin-top:8px}
+.tblbox{background:#fff;border:1px solid #e3e8f2;border-radius:14px;overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:13px;min-width:720px}
+thead th{background:linear-gradient(180deg,#0f3fa8,#1557e8);color:#fff;padding:12px;text-align:left;
+         font-size:12.5px;vertical-align:top;border-right:1px solid rgba(255,255,255,.14)}
+thead th:first-child{width:110px}
+thead .code{display:block;font-size:10px;opacity:.7}
+tbody th{text-align:left;background:#f5f8ff;padding:11px 12px;border-bottom:1px solid #e3e8f2;
+         border-right:1px solid #e3e8f2;font-size:12px;font-weight:700;vertical-align:top;white-space:nowrap}
+tbody td{padding:11px 12px;border-bottom:1px solid #e3e8f2;border-right:1px solid #eef2f9;
+         color:#3c4761;vertical-align:top;line-height:1.6;font-size:12.5px}
+tbody tr:hover td{background:#fafcff}
+td.best{background:#eef4ff;color:#0e3fae;font-weight:600}
+.na{color:#b6bfd4}
+footer{margin-top:36px;padding-top:16px;border-top:1px solid #e3e8f2;font-size:11.5px;color:#77809a}
+.badge{display:inline-block;font-size:10px;font-weight:700;padding:1px 7px;border-radius:5px;
+       background:#fff1e6;color:#d95f04;margin-left:4px}
+</style>
+</head>
+<body>
+<header><div class="hwrap">
+  <h1>样品对比 · <span>共同点 &amp; 差异点</span></h1>
+  <p class="sub">自动从 2 份产品说明书中提取结构化字段，生成对比矩阵。高亮单元格 = 该维度上的独家项。</p>
+  <p class="meta">生成时间：2026-10-17 13:25 ｜ trip-compare</p>
+</div></header>
+<div class="wrap">
+  <section>
+    <div class="stitle"><div class="bar"></div><h2>产品速览</h2><small>2 款</small></div>
+    <div class="cards"><div class="card"><div class="cbar" style="background:#1557e8"></div><div class="code">A-雪山秘境6日</div><h3>雪山秘境 6 日跟团游（样品数据，仅供演示）</h3><div class="days">6 天 5 晚</div><p>拉萨 四钻；林芝 四钻；索松村 民宿</p></div><div class="card"><div class="cbar" style="background:#6b4de6"></div><div class="code">B-川西环线8日</div><h3>川西环线 8 天 7 晚私家团（样品数据，仅供演示）</h3><div class="days">8 天 7 晚</div><p>成都 五钻；四姑娘山 民宿；丹巴 客栈；新都桥 四钻；香格里拉镇 四钻；康定 五钻</p></div></div>
+  </section>
+  <section>
+    <div class="stitle"><div class="bar"></div><h2>对比矩阵</h2><small>★ 蓝底 = 独家项</small></div>
+    <div class="tblbox"><table>
+      <thead><tr><th>对比维度</th><th><span class="code">A-雪山秘境6日</span>雪山秘境 6 日跟团游（样品数据，仅供演示）</th><th><span class="code">B-川西环线8日</span>川西环线 8 天 7 晚私家团（样品数据，仅供演示）</th></tr></thead>
+      <tbody><tr><th>行程天数</th><td class="best">6 天 5 晚</td><td class="best">8 天 7 晚</td></tr><tr><th>团型</th><td class="">2-8 人小团</td><td class="">2 人起订</td></tr><tr><th>用车</th><td class="best">2-8 人拼车小团，越野车出行。</td><td class="best">独立成团，2 人起订，别克 GL8 商务车。</td></tr><tr><th>住宿配置</th><td class="best">拉萨 四钻；林芝 四钻；索松村 民宿</td><td class="best">成都 五钻；四姑娘山 民宿；丹巴 客栈；新都桥 四钻；香格里拉镇 四钻；康定 五钻</td></tr><tr><th>行程覆盖</th><td class="">出发地 → 拉萨 → 巴松措 → 林芝 → 雅鲁藏布大峡谷 → 索松村 → 鲁朗林海 → 羊卓雍措</td><td class="">成都集合 → 成都 → 四姑娘山 → 丹巴藏寨 → 丹巴 → 新都桥 → 稻城亚丁 → 稻城亚丁一日游 → 稻城 → 康定</td></tr><tr><th>滑雪</th><td class="best">雪票自理（滑雪：不含。）</td><td class="best">赠送九寨沟旅拍 9 张精修 + 底片全送，含 4 小时滑雪体验。</td></tr><tr><th>旅拍</th><td class="best">赠送无人机航拍一段，赠送藏装旅拍 6 张。</td><td class="best">赠送九寨沟旅拍 9 张精修 + 底片全送，含 4 小时滑雪体验。</td></tr><tr><th>赠送项目</th><td class="">赠送无人机航拍一段，赠送藏装旅拍 6 张。</td><td class="">赠送九寨沟旅拍 9 张精修 + 底片全送，含 4 小时滑雪体验。</td></tr><tr><th>需自理</th><td class="">正餐自理。</td><td class="">晚餐自理，骑马自费。</td></tr><tr><th>定位人群</th><td class="na">—</td><td class="">蜜月</td></tr></tbody>
+    </table></div>
+  </section>
+  <footer>
+    由 trip-compare 自动生成 ｜ 提取方式：rules
+    ｜ 数据以原始说明书为准
+  </footer>
+</div>
+</body>
+</html>
