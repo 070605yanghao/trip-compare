@@ -1,0 +1,431 @@
+[
+  {
+    "code": "",
+    "title": "雪山秘境 6 日跟团游（样品数据，仅供演示）",
+    "days": 6,
+    "nights": 5,
+    "group_size": "2-8 人小团",
+    "vehicle": "2-8 人拼车小团，越野车出行。",
+    "route": [
+      "出发地",
+      "拉萨",
+      "巴松措",
+      "林芝",
+      "雅鲁藏布大峡谷",
+      "索松村",
+      "鲁朗林海",
+      "羊卓雍措"
+    ],
+    "stays": [
+      {
+        "place": "拉萨",
+        "level": "四钻",
+        "note": ""
+      },
+      {
+        "place": "林芝",
+        "level": "四钻",
+        "note": ""
+      },
+      {
+        "place": "索松村",
+        "level": "民宿",
+        "note": ""
+      }
+    ],
+    "gifts": [
+      "赠送无人机航拍一段",
+      "赠送藏装旅拍 6 张"
+    ],
+    "self_pay": [
+      "正餐自理"
+    ],
+    "excluded": [
+      "滑雪：不含"
+    ],
+    "skiing": "滑雪：不含",
+    "photography": "赠送无人机航拍一段；赠送藏装旅拍 6 张",
+    "audience": "",
+    "source_file": "A-雪山秘境6日",
+    "extractor": "rules",
+    "facts": {
+      "用车": {
+        "status": "included",
+        "value": "越野车出行",
+        "evidence": [
+          "越野车出行"
+        ]
+      },
+      "团型": {
+        "status": "included",
+        "value": "2-8 人拼车小团",
+        "evidence": [
+          "2-8 人拼车小团"
+        ]
+      },
+      "滑雪": {
+        "status": "excluded",
+        "value": "滑雪：不含",
+        "evidence": [
+          "滑雪：不含"
+        ]
+      },
+      "旅拍": {
+        "status": "included",
+        "value": "赠送无人机航拍一段；赠送藏装旅拍 6 张",
+        "evidence": [
+          "赠送无人机航拍一段",
+          "赠送藏装旅拍 6 张"
+        ]
+      },
+      "定位人群": {
+        "status": "unknown",
+        "value": "",
+        "evidence": []
+      },
+      "赠送项目": {
+        "status": "included",
+        "value": "共 2 项，详情见「旅拍」维度",
+        "evidence": [
+          "赠送无人机航拍一段",
+          "赠送藏装旅拍 6 张"
+        ]
+      },
+      "需自理": {
+        "status": "excluded",
+        "value": "正餐自理",
+        "evidence": [
+          "正餐自理"
+        ]
+      },
+      "包含服务": {
+        "status": "included",
+        "value": "车费；住宿 5 晚；门票；早餐",
+        "evidence": [
+          "费用包含：车费",
+          "住宿 5 晚",
+          "门票",
+          "早餐"
+        ]
+      },
+      "行程天数": {
+        "status": "included",
+        "value": "6 天 5 晚",
+        "evidence": [
+          "雪山秘境 6 日跟团游（样品数据，仅供演示）"
+        ]
+      },
+      "住宿配置": {
+        "status": "included",
+        "value": "拉萨 四钻；林芝 四钻；索松村 民宿",
+        "evidence": [
+          "第一天：出发地-拉萨 住：拉萨【四钻】",
+          "第二天：拉萨-巴松措-林芝 住：林芝【四钻】",
+          "第三天：林芝-雅鲁藏布大峡谷-索松村 住：索松村【民宿】",
+          "第四天：索松村-鲁朗林海-拉萨 住：拉萨【四钻】"
+        ]
+      },
+      "行程覆盖": {
+        "status": "included",
+        "value": "出发地 → 拉萨 → 巴松措 → 林芝 → 雅鲁藏布大峡谷 → 索松村 → 鲁朗林海 → 羊卓雍措",
+        "evidence": [
+          "第一天：出发地-拉萨 住：拉萨【四钻】",
+          "第二天：拉萨-巴松措-林芝 住：林芝【四钻】",
+          "第三天：林芝-雅鲁藏布大峡谷-索松村 住：索松村【民宿】",
+          "第四天：索松村-鲁朗林海-拉萨 住：拉萨【四钻】"
+        ]
+      }
+    },
+    "items": [
+      {
+        "text": "赠送无人机航拍一段",
+        "categories": [
+          "photo",
+          "gift"
+        ],
+        "status": "included",
+        "evidence": "赠送无人机航拍一段"
+      },
+      {
+        "text": "赠送藏装旅拍 6 张",
+        "categories": [
+          "photo",
+          "gift"
+        ],
+        "status": "included",
+        "evidence": "赠送藏装旅拍 6 张"
+      },
+      {
+        "text": "车费",
+        "categories": [
+          "included"
+        ],
+        "status": "included",
+        "evidence": "费用包含：车费"
+      },
+      {
+        "text": "住宿 5 晚",
+        "categories": [
+          "included"
+        ],
+        "status": "included",
+        "evidence": "住宿 5 晚"
+      },
+      {
+        "text": "门票",
+        "categories": [
+          "included"
+        ],
+        "status": "included",
+        "evidence": "门票"
+      },
+      {
+        "text": "早餐",
+        "categories": [
+          "included"
+        ],
+        "status": "included",
+        "evidence": "早餐"
+      },
+      {
+        "text": "滑雪：不含",
+        "categories": [
+          "skiing",
+          "excluded"
+        ],
+        "status": "excluded",
+        "evidence": "滑雪：不含"
+      },
+      {
+        "text": "正餐自理",
+        "categories": [
+          "self_pay"
+        ],
+        "status": "excluded",
+        "evidence": "正餐自理"
+      }
+    ]
+  },
+  {
+    "code": "",
+    "title": "川西环线 8 天 7 晚私家团（样品数据，仅供演示）",
+    "days": 8,
+    "nights": 7,
+    "group_size": "2 人起订",
+    "vehicle": "独立成团，2 人起订，别克 GL8 商务车。",
+    "route": [
+      "成都",
+      "四姑娘山",
+      "丹巴藏寨",
+      "丹巴",
+      "新都桥",
+      "稻城亚丁",
+      "稻城",
+      "康定"
+    ],
+    "stays": [
+      {
+        "place": "成都",
+        "level": "五钻",
+        "note": ""
+      },
+      {
+        "place": "四姑娘山",
+        "level": "民宿",
+        "note": ""
+      },
+      {
+        "place": "丹巴",
+        "level": "客栈",
+        "note": ""
+      },
+      {
+        "place": "新都桥",
+        "level": "四钻",
+        "note": ""
+      },
+      {
+        "place": "香格里拉镇",
+        "level": "四钻",
+        "note": ""
+      },
+      {
+        "place": "康定",
+        "level": "五钻",
+        "note": ""
+      }
+    ],
+    "gifts": [
+      "赠送九寨沟旅拍 9 张精修 + 底片全送"
+    ],
+    "self_pay": [
+      "晚餐自理",
+      "骑马自费"
+    ],
+    "excluded": [],
+    "skiing": "含 4 小时滑雪体验",
+    "photography": "赠送九寨沟旅拍 9 张精修 + 底片全送",
+    "audience": "蜜月",
+    "source_file": "B-川西环线8日",
+    "extractor": "rules",
+    "facts": {
+      "用车": {
+        "status": "included",
+        "value": "别克 GL8 商务车",
+        "evidence": [
+          "别克 GL8 商务车"
+        ]
+      },
+      "团型": {
+        "status": "included",
+        "value": "独立成团",
+        "evidence": [
+          "独立成团",
+          "2 人起订",
+          "川西环线 8 天 7 晚私家团（样品数据，仅供演示）"
+        ]
+      },
+      "滑雪": {
+        "status": "included",
+        "value": "含 4 小时滑雪体验",
+        "evidence": [
+          "含 4 小时滑雪体验"
+        ]
+      },
+      "旅拍": {
+        "status": "included",
+        "value": "赠送九寨沟旅拍 9 张精修 + 底片全送",
+        "evidence": [
+          "赠送九寨沟旅拍 9 张精修 + 底片全送"
+        ]
+      },
+      "定位人群": {
+        "status": "included",
+        "value": "定位：蜜月情侣",
+        "evidence": [
+          "定位：蜜月情侣"
+        ]
+      },
+      "赠送项目": {
+        "status": "included",
+        "value": "共 1 项，详情见「旅拍」维度",
+        "evidence": [
+          "赠送九寨沟旅拍 9 张精修 + 底片全送"
+        ]
+      },
+      "需自理": {
+        "status": "excluded",
+        "value": "晚餐自理；骑马自费",
+        "evidence": [
+          "晚餐自理",
+          "骑马自费"
+        ]
+      },
+      "包含服务": {
+        "status": "included",
+        "value": "全程用车；7 晚住宿；门票；早餐",
+        "evidence": [
+          "费用包含：全程用车",
+          "7 晚住宿",
+          "门票",
+          "早餐"
+        ]
+      },
+      "行程天数": {
+        "status": "included",
+        "value": "8 天 7 晚",
+        "evidence": [
+          "川西环线 8 天 7 晚私家团（样品数据，仅供演示）"
+        ]
+      },
+      "住宿配置": {
+        "status": "included",
+        "value": "成都 五钻；四姑娘山 民宿；丹巴 客栈；新都桥 四钻；香格里拉镇 四钻；康定 五钻",
+        "evidence": [
+          "第一天：成都集合 住：成都【五钻】",
+          "第二天：成都-四姑娘山 住：四姑娘山【民宿】",
+          "第三天：四姑娘山-丹巴藏寨 住：丹巴【客栈】",
+          "第四天：丹巴-新都桥 住：新都桥【四钻】"
+        ]
+      },
+      "行程覆盖": {
+        "status": "included",
+        "value": "成都 → 四姑娘山 → 丹巴藏寨 → 丹巴 → 新都桥 → 稻城亚丁 → 稻城 → 康定",
+        "evidence": [
+          "第一天：成都集合 住：成都【五钻】",
+          "第二天：成都-四姑娘山 住：四姑娘山【民宿】",
+          "第三天：四姑娘山-丹巴藏寨 住：丹巴【客栈】",
+          "第四天：丹巴-新都桥 住：新都桥【四钻】"
+        ]
+      }
+    },
+    "items": [
+      {
+        "text": "赠送九寨沟旅拍 9 张精修 + 底片全送",
+        "categories": [
+          "photo",
+          "gift"
+        ],
+        "status": "included",
+        "evidence": "赠送九寨沟旅拍 9 张精修 + 底片全送"
+      },
+      {
+        "text": "含 4 小时滑雪体验",
+        "categories": [
+          "skiing",
+          "included"
+        ],
+        "status": "included",
+        "evidence": "含 4 小时滑雪体验"
+      },
+      {
+        "text": "全程用车",
+        "categories": [
+          "included"
+        ],
+        "status": "included",
+        "evidence": "费用包含：全程用车"
+      },
+      {
+        "text": "7 晚住宿",
+        "categories": [
+          "included"
+        ],
+        "status": "included",
+        "evidence": "7 晚住宿"
+      },
+      {
+        "text": "门票",
+        "categories": [
+          "included"
+        ],
+        "status": "included",
+        "evidence": "门票"
+      },
+      {
+        "text": "早餐",
+        "categories": [
+          "included"
+        ],
+        "status": "included",
+        "evidence": "早餐"
+      },
+      {
+        "text": "晚餐自理",
+        "categories": [
+          "self_pay"
+        ],
+        "status": "excluded",
+        "evidence": "晚餐自理"
+      },
+      {
+        "text": "骑马自费",
+        "categories": [
+          "self_pay"
+        ],
+        "status": "excluded",
+        "evidence": "骑马自费"
+      }
+    ]
+  }
+]

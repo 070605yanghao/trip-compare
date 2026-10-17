@@ -49,6 +49,8 @@ _VEHICLE_KW = re.compile(r"头等舱|福特\s*T8|商务车|越野车|SUV|GL8|座
 _SKI_KW = re.compile(r"滑雪|雪票|雪具")
 _PHOTO_KW = re.compile(r"旅拍|航拍|无人机|单反|精修|跟车视频|底片")
 _AUDIENCE_KW = re.compile(r"蜜月|亲子|闺蜜|单人|家庭|情侣|毕业")
+# 人群定位的语境提示：只有「蜜月」这类词本身不足以断言定位（可能是「蜜月拍照喜字」）
+_AUDIENCE_CUE = re.compile(r"定位|适合|适宜|人群|客群|主打|专享|专属|面向|推荐给|为[^，。；]{0,6}(?:情侣|亲子|闺蜜|家庭|蜜月)")
 _NOISE_STOP = re.compile(r"[（(【\[<][^）)】\]>]*[）)】\]>]")  # 去掉途经点里的括号注释
 
 # ---------- 肯定 / 否定模式（用于判定「包含」还是「不包含」） ----------
@@ -94,7 +96,11 @@ DIM_ROUTE = "行程覆盖"
 
 # ---------- 语义分类模式 ----------
 # 明确不包含（写了「不含」）
-_EXCLUDED_RE = re.compile(r"不含|不包含|未含|不赠送|不提供|没有|无赠送")
+# 注意：「没有」必须紧跟被否定的对象，否则「没有超燃群像」这类抒情句会被当成「不含」
+_EXCLUDED_RE = re.compile(
+    r"不含|不包含|未含|不赠送|不提供|无赠送"
+    r"|没有(?=[^，。；]{0,4}(?:滑雪|雪票|雪具|旅拍|航拍|门票|正餐|用餐|用车|早餐|导游|赠送))"
+)
 # 需自理/自费（要另外掏钱）
 _SELF_PAY_RE = re.compile(r"自理|自费|需另付|另行付费|需自理|费用自理|自行购买")
 # 包含（含在费用里，但不是赠送）
@@ -256,6 +262,8 @@ _INCLUDE_HEAD_RE = re.compile(
 _TITLE_HEAD_RE = re.compile(r"^[^：:]{1,10}[：:]")
 # 只有段头、没有内容的行（如单独一行「费用包含：」）——不算一条事实
 _HEAD_ONLY_RE = re.compile(r"^\s*(?:费用包含|费用已含|费用包含项目|包含|含)\s*[:：]\s*$")
+# 只有段头、没有内容的条目（如正文里单独出现的「费用包含」）——不是一条服务
+_BARE_HEAD_RE = re.compile(r"^(?:费用)?(?:已)?包含(?:项目)?$")
 
 
 def _facts_split(sent: str) -> list[str]:
@@ -332,6 +340,8 @@ def extract_items(text: str) -> list[ExtractedItem]:
             c = re.sub(r"^[◆✦✅►▶\-\s]+", "", c).strip().rstrip("。；;，,、")
             if _HEAD_ONLY_RE.match(c):
                 continue  # 「费用包含：」这种空段头不是事实
+            if _BARE_HEAD_RE.match(c):
+                continue  # 正文里散落的「费用包含」四字本身也不是服务条目
             # 处于费用包含语境时允许 2 字条目（「门票」「早餐」），否则 2 字多为噪音
             min_len = 2 if inherit_include else 3
             if len(c) < min_len or len(c) > MAX_LINE:
@@ -453,15 +463,33 @@ def extract_code(doc: Doc) -> str:
     return m.group(1) if m else ""
 
 
+# 标题行特征：像「双湖之恋 7 日 1+1 头等舱」——带天数、短、且不是说明/费用类句子
+_TITLE_BAD = re.compile(r"住[:：]|用餐|费用|赠送|自理|自费|须知|说明|预约|退|报价|行程预览")
+
+
+def _title_from_name(doc: Doc) -> str:
+    """回退：用文件名当标题（如「M1-A 粉雪冬日7天6晚」→「粉雪冬日7天6晚」）。"""
+    name = doc.name.strip()
+    code = extract_code(doc)
+    if code:
+        name = re.sub(r"^\s*" + re.escape(code) + r"[\s\-—·.、:：]*", "", name) or name
+    return _clip(name, 40)
+
+
 def extract_title(doc: Doc) -> str:
     day_head = re.compile(r"^(DAY\s*\d+|D\s*\d+|第[一二三四五六七八九十]+天)")
     for ln in _lines(doc.text)[:200]:
         ln = ln.strip("=＝-*·— \t")
         if not ln or day_head.match(ln):
             continue  # 行程日行（第一天：...）不是标题
-        if 6 <= len(ln) <= 40 and re.search(r"天|日", ln) and "住" not in ln[:6]:
-            return _clip(ln, 40)
-    return doc.name
+        if not 6 <= len(ln) <= 40:
+            continue
+        if not re.search(r"\d+\s*[天日]", ln):
+            continue  # 没有「7 日 / 8 天」这类天数，多半不是标题
+        if _TITLE_BAD.search(ln):
+            continue
+        return _clip(ln, 40)
+    return _title_from_name(doc)
 
 
 def extract_duration(text: str) -> tuple[int | None, int | None]:
@@ -505,6 +533,9 @@ def extract_route(text: str) -> list[str]:
             part = re.sub(r"\s*用餐[:：].*$", "", part)    # 去掉「用餐：...」尾巴
             part = re.sub(r"(集合|散团|一日游|半日游|自由活动|游玩)$", "", part)  # 去掉动作尾巴
             part = re.sub(r"^[^\u4e00-\u9fa5A-Za-z0-9]+|[^\u4e00-\u9fa5A-Za-z0-9]+$", "", part)
+            # PDF 硬换行常把「（落日观光缆车…」这类括号内容截断，只留半截，直接丢掉
+            if re.search(r"[（(【\[<《]", part) or "?" in part or "？" in part:
+                continue
             if 2 <= len(part) <= 18:
                 stops.append(part)
     return _dedupe(stops)[:14]
@@ -617,7 +648,17 @@ def fact_group_size(text: str, sents: list[str] | None = None) -> Fact:
 
 
 def fact_audience(text: str, sents: list[str] | None = None) -> Fact:
-    return _build_desc_fact(sents or _sentences(text), _AUDIENCE_KW)
+    """定位人群：必须是「在说人群」的句子。
+
+    只出现「蜜月/单人」等词不足以断言人群定位——真实说明书里这些词常出现在
+    「单人房费」「蜜月拍照喜字」这类费用/服务条目中。因此要求句中带定位语境
+    （定位/适合/人群/客群/主打/专享/面向…），否则按「未提及」处理。
+    """
+    sents = sents or _sentences(text)
+    hits = [s for s in sents if _AUDIENCE_KW.search(s) and _AUDIENCE_CUE.search(s)]
+    if not hits:
+        return Fact(status=STATUS_UNKNOWN)
+    return _build_desc_fact(hits, _AUDIENCE_KW)
 
 
 def fact_list(items: list[str], kw: re.Pattern, sents: list[str]) -> Fact:
@@ -659,6 +700,11 @@ def _stay_text(stays: list[Stay]) -> str:
 def parse(doc: Doc) -> TripProduct:
     text = doc.text
     days, nights = extract_duration(text)
+    dur_from_name = False
+    if days is None:
+        # 图片型说明书正文提不出天数时，文件名（如「粉雪冬日7天6晚」）常常写着
+        days, nights = extract_duration(doc.name)
+        dur_from_name = days is not None
     sents = _sentences(text)
 
     # 1) 先把全文切成独立事实并分类（去重、互斥都在这层完成）
@@ -676,8 +722,11 @@ def parse(doc: Doc) -> TripProduct:
     #    它们有确定取值，不能因为没有 Fact 而在报告里显示成「未提及」
     f_duration = Fact(status=STATUS_UNKNOWN)
     if days:
-        ev = [_clip(s, 40) for s in sents
-              if _RE_DAYS_NIGHTS.search(s) or _RE_DAYS_ONLY.search(s)][:2]
+        if dur_from_name:
+            ev = [f"文件名：{_clip(doc.name, 40)}"]
+        else:
+            ev = [_clip(s, 40) for s in sents
+                  if _RE_DAYS_NIGHTS.search(s) or _RE_DAYS_ONLY.search(s)][:2]
         f_duration = Fact(status=STATUS_INCLUDED, value=_duration_text(days, nights), evidence=ev)
 
     f_stays = Fact(status=STATUS_UNKNOWN)

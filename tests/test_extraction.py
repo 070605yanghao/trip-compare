@@ -19,7 +19,7 @@ from trip_compare.compare import (
     status_label,
 )
 from trip_compare.extract import Doc
-from trip_compare.parser import extract_items, parse
+from trip_compare.parser import DIM_AUDIENCE, DIM_DURATION, extract_items, parse
 from trip_compare.schema import (
     STATUS_EXCLUDED,
     STATUS_INCLUDED,
@@ -412,6 +412,69 @@ def test_included_service_no_unique_when_other_unmentioned():
     rows = matrix([a, b])
     marks = cell_marks([a, b], rows)
     assert not any(v == "unique" for v in marks.values()), f"证据不足却标独家：{marks}"
+
+
+# ---------- 12. 真实说明书：标题 / 人群 / 天数兜底 ----------
+
+def test_title_falls_back_to_filename_when_no_title_line():
+    """正文里没有像标题的行（图片型 PDF 常见）时，不能拿正文碎片当标题。"""
+    p = parse(Doc(path="M1-A 粉雪冬日7天6晚.txt", pages=[
+        "跟车视频<每团赠送1条>-自由打卡四大场景：露天蓝调民族音乐会+火焰\n"
+        "禾木自由早起观日出晨雾\nDAY5\n住宿：赛湖小镇 用餐：早餐",
+    ]))
+    assert "粉雪冬日" in p.title, f"应回退到文件名：{p.title}"
+    assert "跟车视频" not in p.title and "音乐会" not in p.title, f"正文碎片被当成标题：{p.title}"
+
+
+def test_title_prefers_title_line_over_filename():
+    """正文有明显标题行时，优先用正文，而不是文件名。"""
+    p = parse(Doc(path="J-D11.双湖之恋7日1+1头等舱.txt", pages=[
+        "双湖之恋 7 日.1+1 头等舱\n第一天：出发地-乌鲁木齐 住：乌鲁木齐【五钻】",
+    ]))
+    assert "双湖之恋" in p.title, p.title
+
+
+def test_audience_requires_positioning_context():
+    """只出现「蜜月/单人」等词不能断言人群定位（可能是「单人房费」「蜜月拍照喜字」）。"""
+    noise = _parse("单人房费：1200 元。\n蜜月拍照喜字布置。\n单人报名同意拼住。", "A")
+    assert noise.fact(DIM_AUDIENCE).status == STATUS_UNKNOWN, noise.fact(DIM_AUDIENCE)
+    real = _parse("定位：蜜月情侣。", "B")
+    assert real.fact(DIM_AUDIENCE).status != STATUS_UNKNOWN, real.fact(DIM_AUDIENCE)
+    assert "蜜月" in real.fact(DIM_AUDIENCE).value, real.fact(DIM_AUDIENCE).value
+
+
+def test_days_fallback_to_filename_with_evidence():
+    """正文提不出天数时，可用文件名兜底，但依据必须说明来源是文件名。"""
+    p = parse(Doc(path="M1-A 粉雪冬日7天6晚.txt", pages=["DAY1 出发地-乌鲁木齐\n住宿：乌鲁木齐"]))
+    f = p.fact(DIM_DURATION)
+    assert p.days == 7 and p.nights == 6, (p.days, p.nights)
+    assert f.value == "7 天 6 晚", f.value
+    assert f.evidence and "文件名" in f.evidence[0], f.evidence
+
+
+def test_route_drops_unbalanced_bracket_stops():
+    """PDF 硬换行产生的半截括号途经点（「将军山（浪漫落日…」）不能进路线。"""
+    p = _parse("第二天：乌鲁木齐-S21 沙漠高速-将军山（浪漫落日观光缆车?・落日狂\n"
+               "第三天：阿勒泰-喀纳斯湖 住：喀纳斯【民宿】", "A")
+    for s in p.route:
+        assert "（" not in s and "?" not in s, f"残缺途经点：{p.route}"
+    assert any("喀纳斯湖" in s for s in p.route), p.route
+
+
+def test_naive_negative_phrase_is_not_excluded():
+    """「没有超燃群像」这类抒情句不能被当成「明确不包含」。"""
+    p = _parse("谁说萍水相逢就没有超燃群像。\n晚餐：不含。", "A")
+    pay = [it.text for it in p.items_of(DIM_SELF_PAY)]
+    assert not any("超燃群像" in t for t in pay), f"抒情句被当成不含项：{pay}"
+    assert any("晚餐" in t for t in pay), f"真正的「不含」被漏掉：{pay}"
+
+
+def test_bare_include_head_is_not_a_service():
+    """正文里单独出现的「费用包含」四个字不是一条服务条目。"""
+    p = _parse("费用包含：\n车费\n费用包含\n门票\n正餐自理。", "A")
+    inc = [it.text for it in p.items_of(DIM_INCLUDED)]
+    assert any("车费" in t for t in inc) and any("门票" in t for t in inc), f"真实条目被误杀：{inc}"
+    assert not any(t.strip() in ("费用包含", "包含", "含") for t in inc), f"空段头被当成服务：{inc}"
 
 
 if __name__ == "__main__":

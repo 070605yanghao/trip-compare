@@ -55,13 +55,25 @@ footer{margin-top:36px;padding-top:16px;border-top:1px solid #e3e8f2;font-size:1
     font-size:11px;color:#8a93ab;line-height:1.5}
 .legend{margin-top:10px;font-size:11.5px;color:#77809a}
 .legend b{font-weight:700}
+td.diff{background:#f6f8fc;color:#3c4761;font-weight:600}
+td.unique{background:#eef4ff;color:#0e3fae;font-weight:600}
+.tag{display:inline-block;font-size:9.5px;font-weight:700;padding:0 5px;border-radius:4px;
+     margin-left:5px;vertical-align:1px}
+.tag-unique{background:#dbe7ff;color:#1557e8}
+.tag-diff{background:#eceff5;color:#7b8499}
+.sumbox{background:#fff;border:1px solid #e3e8f2;border-radius:14px;padding:16px 18px}
+.sumbox ul{list-style:none;margin:0;padding:0}
+.sumbox li{font-size:12.5px;color:#3c4761;padding:6px 0;border-bottom:1px dashed #eef2f9;line-height:1.6}
+.sumbox li:last-child{border-bottom:0}
+.sumbox li.warn{color:#b06a00}
 </style>
 </head>
 <body>
 <header><div class="hwrap">
   <h1>行程对比报告 · <span>共同点 &amp; 差异点</span></h1>
-  <p class="sub">自动从 2 份产品说明书中提取结构化字段，生成对比矩阵。高亮单元格 = 该维度上的独家项。</p>
-  <p class="meta">生成时间：2026-10-17 15:58 ｜ trip-compare</p>
+  <p class="sub">自动从 2 份产品说明书中提取结构化字段，生成对比矩阵；
+    并区分「独家服务」与「属性差异」，每条结论附原文依据。</p>
+  <p class="meta">生成时间：2026-10-17 18:10 ｜ trip-compare</p>
 </div></header>
 <div class="wrap">
   <section>
@@ -69,14 +81,20 @@ footer{margin-top:36px;padding-top:16px;border-top:1px solid #e3e8f2;font-size:1
     <div class="cards"><div class="card"><div class="cbar" style="background:#1557e8"></div><div class="code">A-雪山秘境6日</div><h3>雪山秘境 6 日跟团游（样品数据，仅供演示）</h3><div class="days">6 天 5 晚</div><p>拉萨 四钻；林芝 四钻；索松村 民宿</p></div><div class="card"><div class="cbar" style="background:#6b4de6"></div><div class="code">B-川西环线8日</div><h3>川西环线 8 天 7 晚私家团（样品数据，仅供演示）</h3><div class="days">8 天 7 晚</div><p>成都 五钻；四姑娘山 民宿；丹巴 客栈；新都桥 四钻；香格里拉镇 四钻；康定 五钻</p></div></div>
   </section>
   <section>
-    <div class="stitle"><div class="bar"></div><h2>对比矩阵</h2><small>★ 蓝底 = 独家项</small></div>
+    <div class="stitle"><div class="bar"></div><h2>核心差异摘要</h2><small>仅陈述提取到的事实</small></div>
+    <div class="sumbox"><ul><li class="">行程时长不同：A-雪山秘境6日：6 天 5 晚 ｜ B-川西环线8日：8 天 7 晚</li><li class="">团型不同：A-雪山秘境6日：2-8 人拼车小团 ｜ B-川西环线8日：独立成团</li><li class="">用车不同：A-雪山秘境6日：越野车出行 ｜ B-川西环线8日：别克 GL8 商务车</li><li class="">住宿：A-雪山秘境6日：提取到 3 处（拉萨 四钻；林芝 四钻；索松村 民宿） ｜ B-川西环线8日：提取到 6 处（成都 五钻；四姑娘山 民宿；丹巴 客栈；新都桥 四钻；香格…）</li><li class="">滑雪：A-雪山秘境6日：明确不包含（滑雪：不含） ｜ B-川西环线8日：明确包含（含 4 小时滑雪体验）</li><li class="">旅拍：A-雪山秘境6日：明确赠送（赠送无人机航拍一段；赠送藏装旅拍 6 张） ｜ B-川西环线8日：明确赠送（赠送九寨沟旅拍 9 张精修 + 底片全送）</li><li class="">费用相关：A-雪山秘境6日：赠送 2 项 / 包含 4 项 / 需自理或不包含 1 项 ｜ B-川西环线8日：赠送 1 项 / 包含 4 项 / 需自理或不包含 2 项</li></ul></div>
+  </section>
+  <section>
+    <div class="stitle"><div class="bar"></div><h2>对比矩阵</h2><small>独家 = 有双向证据 ｜ 差异 = 属性不同</small></div>
     <div class="tblbox"><table>
       <thead><tr><th>对比维度</th><th><span class="code">A-雪山秘境6日</span>雪山秘境 6 日跟团游（样品数据，仅供演示）</th><th><span class="code">B-川西环线8日</span>川西环线 8 天 7 晚私家团（样品数据，仅供演示）</th></tr></thead>
-      <tbody><tr><th>行程天数</th><td class="best">6 天 5 晚</td><td class="best">8 天 7 晚</td></tr><tr><th>团型</th><td class=""><span class="st st-included">✓ 明确包含</span>2-8 人拼车小团<span class="ev"><div>“2-8 人拼车小团”</div></span></td><td class=""><span class="st st-included">✓ 明确包含</span>独立成团<span class="ev"><div>“独立成团”</div><div>“2 人起订”</div></span></td></tr><tr><th>用车</th><td class="best"><span class="st st-included">✓ 明确包含</span>越野车出行<span class="ev"><div>“越野车出行”</div></span></td><td class="best"><span class="st st-included">✓ 明确包含</span>别克 GL8 商务车<span class="ev"><div>“别克 GL8 商务车”</div></span></td></tr><tr><th>住宿配置</th><td class="best">拉萨 四钻；林芝 四钻；索松村 民宿</td><td class="best">成都 五钻；四姑娘山 民宿；丹巴 客栈；新都桥 四钻；香格里拉镇 四钻；康定 五钻</td></tr><tr><th>行程覆盖</th><td class="">出发地 → 拉萨 → 巴松措 → 林芝 → 雅鲁藏布大峡谷 → 索松村 → 鲁朗林海 → 羊卓雍措</td><td class="">成都集合 → 成都 → 四姑娘山 → 丹巴藏寨 → 丹巴 → 新都桥 → 稻城亚丁 → 稻城亚丁一日游 → 稻城 → 康定</td></tr><tr><th>滑雪</th><td class="best"><span class="st st-excluded">✗ 明确不包含</span>滑雪：不含<span class="ev"><div>“滑雪：不含”</div></span></td><td class="best"><span class="st st-included">✓ 明确包含</span>含 4 小时滑雪体验<span class="ev"><div>“含 4 小时滑雪体验”</div></span></td></tr><tr><th>旅拍</th><td class="best"><span class="st st-included">✓ 明确包含</span>赠送无人机航拍一段<span class="ev"><div>“赠送无人机航拍一段”</div><div>“赠送藏装旅拍 6 张”</div></span></td><td class="best"><span class="st st-included">✓ 明确包含</span>赠送九寨沟旅拍 9 张精修 + 底片全送<span class="ev"><div>“赠送九寨沟旅拍 9 张精修 + 底片全送”</div></span></td></tr><tr><th>赠送项目</th><td class="">赠送无人机航拍一段；赠送藏装旅拍 6 张<span class="ev"><div>“赠送无人机航拍一段，赠送藏装旅拍 6 张”</div></span></td><td class="">赠送九寨沟旅拍 9 张精修 + 底片全送<span class="ev"><div>“赠送九寨沟旅拍 9 张精修 + 底片全送，含 4 小时滑雪体验”</div></span></td></tr><tr><th>需自理</th><td class="">滑雪：不含；正餐自理<span class="ev"><div>“滑雪：不含”</div><div>“正餐自理”</div></span></td><td class="">晚餐自理；骑马自费<span class="ev"><div>“晚餐自理，骑马自费”</div></span></td></tr><tr><th>定位人群</th><td class="na">未提及</td><td class=""><span class="st st-included">✓ 明确包含</span>定位：蜜月情侣<span class="ev"><div>“定位：蜜月情侣”</div></span></td></tr></tbody>
+      <tbody><tr><th>行程天数</th><td class="diff"><span class="st st-included">✓ 明确说明</span>6 天 5 晚<span class="tag tag-diff">差异</span><span class="ev"><div>“雪山秘境 6 日跟团游（样品数据，仅供演示）”</div></span></td><td class="diff"><span class="st st-included">✓ 明确说明</span>8 天 7 晚<span class="tag tag-diff">差异</span><span class="ev"><div>“川西环线 8 天 7 晚私家团（样品数据，仅供演示）”</div></span></td></tr><tr><th>团型</th><td class="diff"><span class="st st-included">✓ 明确说明</span>2-8 人拼车小团<span class="tag tag-diff">差异</span><span class="ev"><div>“2-8 人拼车小团”</div></span></td><td class="diff"><span class="st st-included">✓ 明确说明</span>独立成团<span class="tag tag-diff">差异</span><span class="ev"><div>“独立成团”</div><div>“2 人起订”</div><div>“川西环线 8 天 7 晚私家团（样品数据，仅供演示）”</div></span></td></tr><tr><th>用车</th><td class="diff"><span class="st st-included">✓ 明确提供</span>越野车出行<span class="tag tag-diff">差异</span><span class="ev"><div>“越野车出行”</div></span></td><td class="diff"><span class="st st-included">✓ 明确提供</span>别克 GL8 商务车<span class="tag tag-diff">差异</span><span class="ev"><div>“别克 GL8 商务车”</div></span></td></tr><tr><th>住宿配置</th><td class="diff"><span class="st st-included">✓ 明确提供</span>拉萨 四钻；林芝 四钻；索松村 民宿<span class="tag tag-diff">差异</span><span class="ev"><div>“第一天：出发地-拉萨 住：拉萨【四钻】”</div><div>“第二天：拉萨-巴松措-林芝 住：林芝【四钻】”</div><div>“第三天：林芝-雅鲁藏布大峡谷-索松村 住：索松村【民宿】”</div><div>… 共 4 条原文依据</div></span></td><td class="diff"><span class="st st-included">✓ 明确提供</span>成都 五钻；四姑娘山 民宿；丹巴 客栈；新都桥 四钻；香格里拉镇 四钻；康定 五钻<span class="tag tag-diff">差异</span><span class="ev"><div>“第一天：成都集合 住：成都【五钻】”</div><div>“第二天：成都-四姑娘山 住：四姑娘山【民宿】”</div><div>“第三天：四姑娘山-丹巴藏寨 住：丹巴【客栈】”</div><div>… 共 4 条原文依据</div></span></td></tr><tr><th>行程覆盖</th><td class="diff"><span class="st st-included">✓ 明确说明</span>出发地 → 拉萨 → 巴松措 → 林芝 → 雅鲁藏布大峡谷 → 索松村 → 鲁朗林海 → 羊卓雍措<span class="tag tag-diff">差异</span><span class="ev"><div>“第一天：出发地-拉萨 住：拉萨【四钻】”</div><div>“第二天：拉萨-巴松措-林芝 住：林芝【四钻】”</div><div>“第三天：林芝-雅鲁藏布大峡谷-索松村 住：索松村【民宿】”</div><div>… 共 4 条原文依据</div></span></td><td class="diff"><span class="st st-included">✓ 明确说明</span>成都 → 四姑娘山 → 丹巴藏寨 → 丹巴 → 新都桥 → 稻城亚丁 → 稻城 → 康定<span class="tag tag-diff">差异</span><span class="ev"><div>“第一天：成都集合 住：成都【五钻】”</div><div>“第二天：成都-四姑娘山 住：四姑娘山【民宿】”</div><div>“第三天：四姑娘山-丹巴藏寨 住：丹巴【客栈】”</div><div>… 共 4 条原文依据</div></span></td></tr><tr><th>滑雪</th><td class=""><span class="st st-excluded">✗ 明确不包含</span>滑雪：不含<span class="ev"><div>“滑雪：不含”</div></span></td><td class="unique"><span class="st st-included">✓ 明确包含</span>含 4 小时滑雪体验<span class="tag tag-unique">独家</span><span class="ev"><div>“含 4 小时滑雪体验”</div></span></td></tr><tr><th>旅拍</th><td class=""><span class="st st-included">✓ 明确赠送</span>赠送无人机航拍一段；赠送藏装旅拍 6 张<span class="ev"><div>“赠送无人机航拍一段”</div><div>“赠送藏装旅拍 6 张”</div></span></td><td class=""><span class="st st-included">✓ 明确赠送</span>赠送九寨沟旅拍 9 张精修 + 底片全送<span class="ev"><div>“赠送九寨沟旅拍 9 张精修 + 底片全送”</div></span></td></tr><tr><th>赠送项目</th><td class="">共 2 项，详情见「旅拍」维度<span class="ev"><div>“赠送无人机航拍一段”</div><div>“赠送藏装旅拍 6 张”</div></span></td><td class="">共 1 项，详情见「旅拍」维度<span class="ev"><div>“赠送九寨沟旅拍 9 张精修 + 底片全送”</div></span></td></tr><tr><th>包含服务</th><td class="">车费；住宿 5 晚；门票；早餐<span class="ev"><div>“费用包含：车费”</div><div>“住宿 5 晚”</div><div>“门票”</div><div>… 共 4 条原文依据</div></span></td><td class="">全程用车；7 晚住宿；门票；早餐<span class="ev"><div>“费用包含：全程用车”</div><div>“7 晚住宿”</div><div>“门票”</div><div>… 共 4 条原文依据</div></span></td></tr><tr><th>需自理</th><td class="">正餐自理<span class="ev"><div>“正餐自理”</div></span></td><td class="">晚餐自理；骑马自费<span class="ev"><div>“晚餐自理”</div><div>“骑马自费”</div></span></td></tr><tr><th>定位人群</th><td class="na">未提及</td><td class=""><span class="st st-included">✓ 明确说明</span>定位：蜜月情侣<span class="ev"><div>“定位：蜜月情侣”</div></span></td></tr></tbody>
     </table></div>
     <p class="legend">
-      <b>状态说明：</b>✓ 明确包含 ｜ ✗ 明确不包含 ｜ ? 原文未提及（不等于不包含）｜ ~ 表述模糊/自相矛盾，需人工确认。
-      灰色小字为对应原文依据，仅供核实；未提及项不参与独家项比较。
+      <b>状态说明：</b>✓ 明确包含/赠送/提供 ｜ ✗ 明确不包含、需自理或需自费 ｜ ? 原文未提及（不等于不包含）｜ ~ 表述模糊或自相矛盾，需人工确认。
+      <b>标记说明：</b><span class="tag tag-unique">独家</span> 仅在该产品明确包含、且其他产品明确不包含时给出；
+      <span class="tag tag-diff">差异</span> 只表示客观属性取值不同，不代表某产品独有或更优。
+      灰色小字为对应原文依据；未提及项不参与独家判定。
     </p>
   </section>
   <footer>

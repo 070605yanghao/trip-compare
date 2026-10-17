@@ -1,0 +1,2497 @@
+[
+  {
+    "code": "",
+    "title": "双湖之恋 7 日.1+1 头等舱",
+    "days": 7,
+    "nights": 6,
+    "group_size": "2-6 人小团",
+    "vehicle": "双湖之恋 7 日.1+1 头等舱",
+    "route": [
+      "出发地",
+      "乌鲁木齐",
+      "S21 沙漠高速",
+      "阿勒泰",
+      "喀纳斯湖",
+      "禾木",
+      "克拉玛依",
+      "克勒涌珠",
+      "灯塔",
+      "赛里木湖",
+      "二进赛湖",
+      "日出漫步",
+      "途观天山天脉",
+      "解锁禾木 Citywalk"
+    ],
+    "stays": [
+      {
+        "place": "乌鲁木齐",
+        "level": "五钻",
+        "note": ""
+      },
+      {
+        "place": "阿勒泰",
+        "level": "四钻",
+        "note": ""
+      },
+      {
+        "place": "禾木",
+        "level": "景区小木屋住宿",
+        "note": ""
+      },
+      {
+        "place": "克拉玛依",
+        "level": "四钻",
+        "note": ""
+      },
+      {
+        "place": "赛里木湖",
+        "level": "四钻",
+        "note": ""
+      },
+      {
+        "place": "",
+        "level": "",
+        "note": "小斌之家/盘云/陌野/和睦仁家/云雪间/红松/云住/半山渡/心居客栈/禾羽山"
+      }
+    ],
+    "gifts": [
+      "赠送赛湖航拍短片（跟车视频）",
+      "赛湖追风记 <车视频全团赠送 1 段航拍>-赛湖东门",
+      "赠送将军山【落日观光缆车・落日狂欢派对・云端电",
+      "今日特别安排免费赠送赛湖轻旅拍+网红跟车航拍视频",
+      "2. 赛湖跟车视频：赠送项目：如未拍摄",
+      "3.单反拍摄（15 张照片）：赠送项目",
+      "4.赛里木湖轻旅拍赠送项目"
+    ],
+    "self_pay": [
+      "用餐：三餐自理",
+      "躺雪）-11 月 20 日营业可选择吉克普林滑雪场（雪票自理）-克拉玛依",
+      "中晚餐自理",
+      "晚餐自理哦",
+      "早餐都需要自理哦",
+      "正餐请自理",
+      "丰俭由人且费用自理",
+      "7. 自费骑马提示：若您在行程中想参与骑马等自费项目"
+    ],
+    "excluded": [
+      "可自行前往推荐景点参观游览（今日不含单独用车）",
+      "行选择→不含雪票）-阿勒泰",
+      "端电音蹦迪 party .橘子海落日 Blue Hour）-将军山夜滑（自行选择→不含雪票）-阿",
+      "白哈巴景区住宿不含早餐",
+      "禾木/贾登峪/白哈巴不含早餐",
+      "儿童：儿童只含单车费（不含门票+区间车和住宿费，不含餐）",
+      "费用不含"
+    ],
+    "skiing": "是雪友私藏的滑雪乌托邦；行选择→不含雪票）-阿勒泰；躺雪）-11 月 20 日营业可选择吉克普林滑雪场（雪票自理）…；端电音蹦迪 party .橘子海落日 Blue Hour）-将…（共 13 条）",
+    "photography": "赠赛里木湖轻旅拍（湖景大窗旅拍-9 张）；赠送赛湖航拍短片（跟车视频）；定格雪域公路的浪漫瞬间（全团 1 段航拍）；配备单反（15张照片）+咖啡机（仅一次）（共 9 条）",
+    "audience": "单人",
+    "source_file": "J-D11.双湖之恋7日1+1头等舱",
+    "extractor": "rules",
+    "facts": {
+      "用车": {
+        "status": "included",
+        "value": "专属 1+1 头等舱车型",
+        "evidence": [
+          "专属 1+1 头等舱车型",
+          "不接受游客指定车型的要求",
+          "本社严格选用具备合法营运资质的商务车型"
+        ]
+      },
+      "团型": {
+        "status": "included",
+        "value": "2-6人小团上线",
+        "evidence": [
+          "2-6人小团上线",
+          "本线路为 2-6 人小团拼车游",
+          "本行程为全国 2-6 人拼团模式"
+        ]
+      },
+      "滑雪": {
+        "status": "ambiguous",
+        "value": "是雪友私藏的滑雪乌托邦；行选择→不含雪票）-阿勒泰；躺雪）-11 月 20 日营业可选择吉克普林滑雪场（雪票自理）…；端电音蹦迪 party .橘子海落日 Blue Hour）-将…（共 13 条）",
+        "evidence": [
+          "是雪友私藏的滑雪乌托邦",
+          "行选择→不含雪票）-阿勒泰",
+          "躺雪）-11 月 20 日营业可选择吉克普林滑雪场（雪票自理）-克拉玛依",
+          "端电音蹦迪 party .橘子海落日 Blue Hour）-将军山夜滑（自行选择→不含雪票）-阿"
+        ]
+      },
+      "旅拍": {
+        "status": "ambiguous",
+        "value": "赠赛里木湖轻旅拍（湖景大窗旅拍-9 张）；赠送赛湖航拍短片（跟车视频）；定格雪域公路的浪漫瞬间（全团 1 段航拍）；配备单反（15张照片）+咖啡机（仅一次）（共 9 条）",
+        "evidence": [
+          "赠赛里木湖轻旅拍（湖景大窗旅拍-9 张）",
+          "赠送赛湖航拍短片（跟车视频）",
+          "定格雪域公路的浪漫瞬间（全团 1 段航拍）",
+          "配备单反（15张照片）+咖啡机（仅一次）"
+        ]
+      },
+      "定位人群": {
+        "status": "unknown",
+        "value": "",
+        "evidence": []
+      },
+      "赠送项目": {
+        "status": "included",
+        "value": "赠送将军山【落日观光缆车・落日狂欢派对・云端电",
+        "evidence": [
+          "赠送将军山【落日观光缆车・落日狂欢派对・云端电"
+        ]
+      },
+      "需自理": {
+        "status": "excluded",
+        "value": "用餐：三餐自理；中晚餐自理；晚餐自理哦；早餐都需要自理哦（共 12 条）",
+        "evidence": [
+          "用餐：三餐自理",
+          "中晚餐自理",
+          "晚餐自理哦",
+          "早餐都需要自理哦"
+        ]
+      },
+      "包含服务": {
+        "status": "included",
+        "value": "用餐：酒店含早；含接送服务；儿童必须含床；包含（喀禾冬季套票，赛里木湖自驾票）（共 18 条）",
+        "evidence": [
+          "用餐：酒店含早",
+          "含接送服务",
+          "儿童必须含床",
+          "包含（喀禾冬季套票，赛里木湖自驾票）"
+        ]
+      },
+      "行程天数": {
+        "status": "included",
+        "value": "7 天 6 晚",
+        "evidence": [
+          "双湖之恋 7 日.1+1 头等舱",
+          "躺雪）-11 月 20 日营业可选择吉克普林滑雪场（雪票自理）-克拉玛依"
+        ]
+      },
+      "住宿配置": {
+        "status": "included",
+        "value": "乌鲁木齐 五钻；阿勒泰 四钻；禾木 景区小木屋住宿；克拉玛依 四钻；赛里木湖 四钻；（小斌之家/盘云/陌野/和睦仁家/云雪间/红松/云住/半山渡/心居客栈/禾…",
+        "evidence": [
+          "第一天：出发地-✈乌鲁木齐 住：乌鲁木齐【五钻】",
+          "住：阿勒泰【四钻】",
+          "住：禾木【景区小木屋住宿】",
+          "住：克拉玛依【四钻】"
+        ]
+      },
+      "行程覆盖": {
+        "status": "included",
+        "value": "出发地 → 乌鲁木齐 → S21 沙漠高速 → 阿勒泰 → 喀纳斯湖 → 禾木 → 克拉玛依 → 克勒涌珠 → 灯塔 → 赛里木湖",
+        "evidence": [
+          "DAY 1 | 出发地-✈乌鲁木齐",
+          "第一天：出发地-✈乌鲁木齐 住：乌鲁木齐【五钻】",
+          "第二天：乌鲁木齐-S21 沙漠高速-将军山（浪漫落日观光缆车?・落日狂",
+          "第三天：阿勒泰-喀纳斯湖（坠入喀纳斯冬日冰雪梦境）-喀纳斯三湾（神"
+        ]
+      }
+    },
+    "items": [
+      {
+        "text": "是雪友私藏的滑雪乌托邦",
+        "categories": [
+          "skiing"
+        ],
+        "status": "ambiguous",
+        "evidence": "是雪友私藏的滑雪乌托邦"
+      },
+      {
+        "text": "赠赛里木湖轻旅拍（湖景大窗旅拍-9 张）",
+        "categories": [
+          "photo"
+        ],
+        "status": "ambiguous",
+        "evidence": "赠赛里木湖轻旅拍（湖景大窗旅拍-9 张）"
+      },
+      {
+        "text": "赠送赛湖航拍短片（跟车视频）",
+        "categories": [
+          "photo",
+          "gift"
+        ],
+        "status": "included",
+        "evidence": "赠送赛湖航拍短片（跟车视频）"
+      },
+      {
+        "text": "定格雪域公路的浪漫瞬间（全团 1 段航拍）",
+        "categories": [
+          "photo"
+        ],
+        "status": "ambiguous",
+        "evidence": "定格雪域公路的浪漫瞬间（全团 1 段航拍）"
+      },
+      {
+        "text": "配备单反（15张照片）+咖啡机（仅一次）",
+        "categories": [
+          "photo"
+        ],
+        "status": "ambiguous",
+        "evidence": "配备单反（15张照片）+咖啡机（仅一次）"
+      },
+      {
+        "text": "用餐：三餐自理",
+        "categories": [
+          "self_pay"
+        ],
+        "status": "excluded",
+        "evidence": "用餐：三餐自理"
+      },
+      {
+        "text": "可自行前往推荐景点参观游览（今日不含单独用车）",
+        "categories": [
+          "excluded"
+        ],
+        "status": "excluded",
+        "evidence": "可自行前往推荐景点参观游览（今日不含单独用车）"
+      },
+      {
+        "text": "行选择→不含雪票）-阿勒泰",
+        "categories": [
+          "skiing",
+          "excluded"
+        ],
+        "status": "excluded",
+        "evidence": "行选择→不含雪票）-阿勒泰"
+      },
+      {
+        "text": "躺雪）-11 月 20 日营业可选择吉克普林滑雪场（雪票自理）-克拉玛依",
+        "categories": [
+          "skiing",
+          "self_pay"
+        ],
+        "status": "excluded",
+        "evidence": "躺雪）-11 月 20 日营业可选择吉克普林滑雪场（雪票自理）-克拉玛依"
+      },
+      {
+        "text": "赛湖追风记 <车视频全团赠送 1 段航拍>-赛湖东门",
+        "categories": [
+          "photo",
+          "gift"
+        ],
+        "status": "included",
+        "evidence": "赛湖追风记 <车视频全团赠送 1 段航拍>-赛湖东门"
+      },
+      {
+        "text": "端电音蹦迪 party .橘子海落日 Blue Hour）-将军山夜滑（自行选择→不含雪票）-阿",
+        "categories": [
+          "skiing",
+          "excluded"
+        ],
+        "status": "excluded",
+        "evidence": "端电音蹦迪 party .橘子海落日 Blue Hour）-将军山夜滑（自行选择→不含雪票）-阿"
+      },
+      {
+        "text": "用餐：酒店含早",
+        "categories": [
+          "included"
+        ],
+        "status": "included",
+        "evidence": "用餐：酒店含早"
+      },
+      {
+        "text": "中晚餐自理",
+        "categories": [
+          "self_pay"
+        ],
+        "status": "excluded",
+        "evidence": "中晚餐自理"
+      },
+      {
+        "text": "赠送将军山【落日观光缆车・落日狂欢派对・云端电",
+        "categories": [
+          "gift"
+        ],
+        "status": "included",
+        "evidence": "赠送将军山【落日观光缆车・落日狂欢派对・云端电"
+      },
+      {
+        "text": "20:30-21:00 滑雪爱好者可在雪场开放后自行购票体验将军山夜滑",
+        "categories": [
+          "skiing"
+        ],
+        "status": "ambiguous",
+        "evidence": "20:30-21:00 滑雪爱好者可在雪场开放后自行购票体验将军山夜滑"
+      },
+      {
+        "text": "不滑雪的游客可自行享用晚餐",
+        "categories": [
+          "skiing"
+        ],
+        "status": "ambiguous",
+        "evidence": "不滑雪的游客可自行享用晚餐"
+      },
+      {
+        "text": "10.滑雪爱好者可在雪场开放后自行购票体验将军山夜滑",
+        "categories": [
+          "skiing"
+        ],
+        "status": "ambiguous",
+        "evidence": "10.滑雪爱好者可在雪场开放后自行购票体验将军山夜滑"
+      },
+      {
+        "text": "含接送服务",
+        "categories": [
+          "included"
+        ],
+        "status": "included",
+        "evidence": "含接送服务"
+      },
+      {
+        "text": "滑雪务必注意安全",
+        "categories": [
+          "skiing"
+        ],
+        "status": "ambiguous",
+        "evidence": "滑雪务必注意安全"
+      },
+      {
+        "text": "白哈巴景区住宿不含早餐",
+        "categories": [
+          "excluded"
+        ],
+        "status": "excluded",
+        "evidence": "白哈巴景区住宿不含早餐"
+      },
+      {
+        "text": "也可以选择自行去吉克普林滑雪哦~（雪场常规开放时间为 11 月下",
+        "categories": [
+          "skiing"
+        ],
+        "status": "ambiguous",
+        "evidence": "也可以选择自行去吉克普林滑雪哦~（雪场常规开放时间为 11 月下"
+      },
+      {
+        "text": "晚餐自理哦",
+        "categories": [
+          "self_pay"
+        ],
+        "status": "excluded",
+        "evidence": "晚餐自理哦"
+      },
+      {
+        "text": "早餐都需要自理哦",
+        "categories": [
+          "self_pay"
+        ],
+        "status": "excluded",
+        "evidence": "早餐都需要自理哦"
+      },
+      {
+        "text": "今日特别安排免费赠送赛湖轻旅拍+网红跟车航拍视频",
+        "categories": [
+          "photo",
+          "gift"
+        ],
+        "status": "included",
+        "evidence": "今日特别安排免费赠送赛湖轻旅拍+网红跟车航拍视频"
+      },
+      {
+        "text": "儿童必须含床",
+        "categories": [
+          "included"
+        ],
+        "status": "included",
+        "evidence": "儿童必须含床"
+      },
+      {
+        "text": "包含（喀禾冬季套票，赛里木湖自驾票）",
+        "categories": [
+          "included"
+        ],
+        "status": "included",
+        "evidence": "包含（喀禾冬季套票，赛里木湖自驾票）"
+      },
+      {
+        "text": "已含司机食宿费用",
+        "categories": [
+          "included"
+        ],
+        "status": "included",
+        "evidence": "已含司机食宿费用"
+      },
+      {
+        "text": "无法提供详细讲解服务",
+        "categories": [
+          "included"
+        ],
+        "status": "included",
+        "evidence": "无法提供详细讲解服务"
+      },
+      {
+        "text": "餐食：此行程酒店含早餐",
+        "categories": [
+          "included"
+        ],
+        "status": "included",
+        "evidence": "餐食：此行程酒店含早餐"
+      },
+      {
+        "text": "禾木/贾登峪/白哈巴不含早餐",
+        "categories": [
+          "excluded"
+        ],
+        "status": "excluded",
+        "evidence": "禾木/贾登峪/白哈巴不含早餐"
+      },
+      {
+        "text": "正餐请自理",
+        "categories": [
+          "self_pay"
+        ],
+        "status": "excluded",
+        "evidence": "正餐请自理"
+      },
+      {
+        "text": "儿童：儿童只含单车费（不含门票+区间车和住宿费，不含餐）",
+        "categories": [
+          "excluded"
+        ],
+        "status": "excluded",
+        "evidence": "儿童：儿童只含单车费（不含门票+区间车和住宿费，不含餐）"
+      },
+      {
+        "text": "含于景区套餐内",
+        "categories": [
+          "included"
+        ],
+        "status": "included",
+        "evidence": "含于景区套餐内"
+      },
+      {
+        "text": "2. 赛湖跟车视频：赠送项目：如未拍摄",
+        "categories": [
+          "photo",
+          "gift"
+        ],
+        "status": "included",
+        "evidence": "2. 赛湖跟车视频：赠送项目：如未拍摄"
+      },
+      {
+        "text": "3.单反拍摄（15 张照片）：赠送项目",
+        "categories": [
+          "photo",
+          "gift"
+        ],
+        "status": "included",
+        "evidence": "3.单反拍摄（15 张照片）：赠送项目"
+      },
+      {
+        "text": "4.赛里木湖轻旅拍赠送项目",
+        "categories": [
+          "photo",
+          "gift"
+        ],
+        "status": "included",
+        "evidence": "4.赛里木湖轻旅拍赠送项目"
+      },
+      {
+        "text": "费用不含",
+        "categories": [
+          "excluded"
+        ],
+        "status": "excluded",
+        "evidence": "费用不含"
+      },
+      {
+        "text": "以上情况产生的费用及费用包含中未提及的所有费用",
+        "categories": [
+          "included"
+        ],
+        "status": "included",
+        "evidence": "以上情况产生的费用及费用包含中未提及的所有费用"
+      },
+      {
+        "text": "除提供健康证明外",
+        "categories": [
+          "included"
+        ],
+        "status": "included",
+        "evidence": "除提供健康证明外"
+      },
+      {
+        "text": "4. 单独出行的未成年人：未满18周岁者参团需提供监护人授权书",
+        "categories": [
+          "included"
+        ],
+        "status": "included",
+        "evidence": "4. 单独出行的未成年人：未满18周岁者参团需提供监护人授权书"
+      },
+      {
+        "text": "5.禾木滑雪等其他冰上项目仅在冬季开放",
+        "categories": [
+          "skiing"
+        ],
+        "status": "ambiguous",
+        "evidence": "5.禾木滑雪等其他冰上项目仅在冬季开放"
+      },
+      {
+        "text": "A 方案：更换阿勒泰周边替代景区游览（包含将军山滑雪场等周边景点）",
+        "categories": [
+          "skiing",
+          "included"
+        ],
+        "status": "included",
+        "evidence": "A 方案：更换阿勒泰周边替代景区游览（包含将军山滑雪场等周边景点）"
+      },
+      {
+        "text": "我社将全程提供专业方案对接服务",
+        "categories": [
+          "included"
+        ],
+        "status": "included",
+        "evidence": "我社将全程提供专业方案对接服务"
+      },
+      {
+        "text": "等候期间车内全程提供暖气",
+        "categories": [
+          "included"
+        ],
+        "status": "included",
+        "evidence": "等候期间车内全程提供暖气"
+      },
+      {
+        "text": "防滑雪地靴",
+        "categories": [
+          "skiing"
+        ],
+        "status": "ambiguous",
+        "evidence": "防滑雪地靴"
+      },
+      {
+        "text": "滑雪裤",
+        "categories": [
+          "skiing"
+        ],
+        "status": "ambiguous",
+        "evidence": "滑雪裤"
+      },
+      {
+        "text": "丰俭由人且费用自理",
+        "categories": [
+          "self_pay"
+        ],
+        "status": "excluded",
+        "evidence": "丰俭由人且费用自理"
+      },
+      {
+        "text": "团费费用仅包含单人单床费用",
+        "categories": [
+          "included"
+        ],
+        "status": "included",
+        "evidence": "团费费用仅包含单人单床费用"
+      },
+      {
+        "text": "无法提供景点专业讲解服务",
+        "categories": [
+          "included"
+        ],
+        "status": "included",
+        "evidence": "无法提供景点专业讲解服务"
+      },
+      {
+        "text": "间为您提供协助",
+        "categories": [
+          "included"
+        ],
+        "status": "included",
+        "evidence": "间为您提供协助"
+      },
+      {
+        "text": "7. 自费骑马提示：若您在行程中想参与骑马等自费项目",
+        "categories": [
+          "self_pay"
+        ],
+        "status": "excluded",
+        "evidence": "7. 自费骑马提示：若您在行程中想参与骑马等自费项目"
+      },
+      {
+        "text": "请务必提供准确",
+        "categories": [
+          "included"
+        ],
+        "status": "included",
+        "evidence": "请务必提供准确"
+      },
+      {
+        "text": "因游客个人原因提供的信息不准确",
+        "categories": [
+          "included"
+        ],
+        "status": "included",
+        "evidence": "因游客个人原因提供的信息不准确"
+      }
+    ]
+  },
+  {
+    "code": "",
+    "title": "冬日蜜境 7 日「1+1 头等舱」",
+    "days": 7,
+    "nights": 6,
+    "group_size": "2-6 人小团",
+    "vehicle": "冬日蜜境 7 日「1+1 头等舱」",
+    "route": [
+      "温暖的家",
+      "乌鲁木齐",
+      "穿越古尔班通古特沙漠",
+      "出发地",
+      "乌鲁木齐接机车程约30 分钟",
+      "阿勒泰",
+      "寒烟冷杉",
+      "雾凇云杉",
+      "雪域喀纳",
+      "禾木",
+      "禾木吉克普林滑雪场",
+      "雪地“泼水成",
+      "克拉玛依",
+      "西海草原"
+    ],
+    "stays": [
+      {
+        "place": "乌鲁木齐",
+        "level": "四钻酒店",
+        "note": ""
+      },
+      {
+        "place": "阿勒泰",
+        "level": "甄选四钻",
+        "note": ""
+      },
+      {
+        "place": "禾木",
+        "level": "雪景童话木屋",
+        "note": ""
+      },
+      {
+        "place": "克拉玛依",
+        "level": "四钻酒店",
+        "note": ""
+      },
+      {
+        "place": "赛湖东门",
+        "level": "四钻酒店",
+        "note": ""
+      }
+    ],
+    "gifts": [
+      "赠送司兼向导拍摄2 段 15S 以上视频",
+      "【禾木之夜】赠送安排禾木最劲爆的“篝火晚会”",
+      "礼遇相赠：让旅行不止于所见",
+      "赠送将军山云顶日落派对",
+      "赠送将军山落日缆车",
+      "赠送赛里木湖跟车视频（ 1团1段视频）",
+      "赠送吉克普林滑雪初级道 4小时",
+      "头）-赠送•赛湖跟车视频 <每团送1条>",
+      "赠送9 张精修照片+15 张底片全送",
+      "前往吉克普林滑雪场游玩（雪场开板后，赠送4小时吉克普",
+      "本次赠送初级道滑雪票（ 4 小时日场票，含雪鞋，雪板，雪杖和魔毯）",
+      "赠送【赛湖跟车视频】 （每团送1 条）"
+    ],
+    "self_pay": [
+      "夜滑将军山（若开放，雪票自理） -阿勒泰",
+      "餐食：自理",
+      "雪票自理）-阿勒泰  路程大约530 公里 约 7 小时",
+      "22:00-23:00   晚餐自理后",
+      "午餐景区内自理",
+      "08:00-09:00 早餐自理",
+      "餐食：三餐自理",
+      "费用自理",
+      "早餐 需要自理",
+      "中途自理享用午餐",
+      "车费自理）",
+      "建议游客可自行购买更高额的险种",
+      "续住费用需由您自理"
+    ],
+    "excluded": [
+      "◎用餐说明：此产品全程不含正餐",
+      "除喀纳斯禾木景区民宿不含早餐外",
+      "场内雪具租赁费不含）",
+      "住房一律不含早餐",
+      "禾木不含早餐",
+      "费用不含：",
+      "当地餐食：不含全程正餐",
+      "不提供自然单间",
+      "项目及费用包含未提及的其他消费均不含",
+      "司导服务：本团没有导游"
+    ],
+    "skiing": "赠送吉克普林滑雪初级道 4小时；夜滑将军山（若开放，雪票自理） -阿勒泰；第四天：禾木 -禾木吉克普林滑雪场（含 4小时初级道雪票） -…；雪票自理）-阿勒泰  路程大约530 公里 约 7 小时（共 31 条）",
+    "photography": "无人机+单反双重视角记录旅途美好；赠送赛里木湖跟车视频（ 1团1段视频）；头）-赠送•赛湖跟车视频 <每团送1条>；禾木体验 2【雪景轻旅拍】——永恒的记忆（共 7 条）",
+    "audience": "单人",
+    "source_file": "冬日蜜境（赛湖版）·7日1+1头等舱",
+    "extractor": "rules",
+    "facts": {
+      "用车": {
+        "status": "included",
+        "value": "接送机车辆不限车型",
+        "evidence": [
+          "接送机车辆不限车型",
+          "全程安排 1+1 头等舱用车",
+          "当地用车：当地 1+1 头等舱用车"
+        ]
+      },
+      "团型": {
+        "status": "included",
+        "value": "2-6 人个性 MINI 纯玩小团",
+        "evidence": [
+          "2-6 人个性 MINI 纯玩小团",
+          "◎精致小团 ：此团型为2-6 人 mini 拼车小团",
+          "拼团说明：本行程为全国 2-6 人拼团(2 人成行/6 人上限)"
+        ]
+      },
+      "滑雪": {
+        "status": "ambiguous",
+        "value": "赠送吉克普林滑雪初级道 4小时；夜滑将军山（若开放，雪票自理） -阿勒泰；第四天：禾木 -禾木吉克普林滑雪场（含 4小时初级道雪票） -…；雪票自理）-阿勒泰  路程大约530 公里 约 7 小时（共 31 条）",
+        "evidence": [
+          "赠送吉克普林滑雪初级道 4小时",
+          "夜滑将军山（若开放，雪票自理） -阿勒泰",
+          "第四天：禾木 -禾木吉克普林滑雪场（含 4小时初级道雪票） -雪地“泼水成",
+          "雪票自理）-阿勒泰  路程大约530 公里 约 7 小时"
+        ]
+      },
+      "旅拍": {
+        "status": "ambiguous",
+        "value": "无人机+单反双重视角记录旅途美好；赠送赛里木湖跟车视频（ 1团1段视频）；头）-赠送•赛湖跟车视频 <每团送1条>；禾木体验 2【雪景轻旅拍】——永恒的记忆（共 7 条）",
+        "evidence": [
+          "无人机+单反双重视角记录旅途美好",
+          "赠送赛里木湖跟车视频（ 1团1段视频）",
+          "头）-赠送•赛湖跟车视频 <每团送1条>",
+          "禾木体验 2【雪景轻旅拍】——永恒的记忆"
+        ]
+      },
+      "定位人群": {
+        "status": "unknown",
+        "value": "",
+        "evidence": []
+      },
+      "赠送项目": {
+        "status": "included",
+        "value": "赠送司兼向导拍摄2 段 15S 以上视频；【禾木之夜】赠送安排禾木最劲爆的“篝火晚会”；礼遇相赠：让旅行不止于所见；赠送将军山云顶日落派对（共 5 条）",
+        "evidence": [
+          "赠送司兼向导拍摄2 段 15S 以上视频",
+          "【禾木之夜】赠送安排禾木最劲爆的“篝火晚会”",
+          "礼遇相赠：让旅行不止于所见",
+          "赠送将军山云顶日落派对"
+        ]
+      },
+      "需自理": {
+        "status": "excluded",
+        "value": "餐食：自理；22:00-23:00   晚餐自理后；午餐景区内自理；08:00-09:00 早餐自理（共 20 条）",
+        "evidence": [
+          "餐食：自理",
+          "22:00-23:00   晚餐自理后",
+          "午餐景区内自理",
+          "08:00-09:00 早餐自理"
+        ]
+      },
+      "包含服务": {
+        "status": "included",
+        "value": "【管家服务】每日提供行程攻略；提供拍照道具；其他酒店均含早餐；◎行前说明：请提供正确的身份证信息（共 19 条）",
+        "evidence": [
+          "【管家服务】每日提供行程攻略",
+          "提供拍照道具",
+          "其他酒店均含早餐",
+          "◎行前说明：请提供正确的身份证信息"
+        ]
+      },
+      "行程天数": {
+        "status": "included",
+        "value": "7 天 6 晚",
+        "evidence": [
+          "冬日蜜境 7 日「1+1 头等舱」",
+          "营业时间：10:00-18:00，2025年11月10日开板，请计划好滑雪时间…"
+        ]
+      },
+      "住宿配置": {
+        "status": "included",
+        "value": "乌鲁木齐 四钻酒店；阿勒泰 甄选四钻；禾木 雪景童话木屋；克拉玛依 四钻酒店；赛湖东门 四钻酒店",
+        "evidence": []
+      },
+      "行程覆盖": {
+        "status": "included",
+        "value": "温暖的家 → 乌鲁木齐 → 穿越古尔班通古特沙漠 → 出发地 → 乌鲁木齐接机车程约30 分钟 → 阿勒泰 → 寒烟冷杉 → 雾凇云杉 → 雪域喀纳 → 禾木",
+        "evidence": [
+          "第一天：温暖的家 -乌鲁木齐（接机 服务）",
+          "第二天：乌鲁木齐 -穿越S21沙漠公路（准噶尔极境·穿越古尔班通古特沙漠",
+          "第一天 出发地-乌鲁木齐（接机服务）接机车程约30 分钟",
+          "第三天：阿勒泰 -途观泰加林（雪中落叶松·寒烟冷杉·雾凇云杉） -雪域喀纳"
+        ]
+      }
+    },
+    "items": [
+      {
+        "text": "无人机+单反双重视角记录旅途美好",
+        "categories": [
+          "photo"
+        ],
+        "status": "ambiguous",
+        "evidence": "无人机+单反双重视角记录旅途美好"
+      },
+      {
+        "text": "赠送司兼向导拍摄2 段 15S 以上视频",
+        "categories": [
+          "gift"
+        ],
+        "status": "included",
+        "evidence": "赠送司兼向导拍摄2 段 15S 以上视频"
+      },
+      {
+        "text": "【禾木之夜】赠送安排禾木最劲爆的“篝火晚会”",
+        "categories": [
+          "gift"
+        ],
+        "status": "included",
+        "evidence": "【禾木之夜】赠送安排禾木最劲爆的“篝火晚会”"
+      },
+      {
+        "text": "【管家服务】每日提供行程攻略",
+        "categories": [
+          "included"
+        ],
+        "status": "included",
+        "evidence": "【管家服务】每日提供行程攻略"
+      },
+      {
+        "text": "礼遇相赠：让旅行不止于所见",
+        "categories": [
+          "gift"
+        ],
+        "status": "included",
+        "evidence": "礼遇相赠：让旅行不止于所见"
+      },
+      {
+        "text": "赠送将军山云顶日落派对",
+        "categories": [
+          "gift"
+        ],
+        "status": "included",
+        "evidence": "赠送将军山云顶日落派对"
+      },
+      {
+        "text": "赠送将军山落日缆车",
+        "categories": [
+          "gift"
+        ],
+        "status": "included",
+        "evidence": "赠送将军山落日缆车"
+      },
+      {
+        "text": "赠送赛里木湖跟车视频（ 1团1段视频）",
+        "categories": [
+          "photo",
+          "gift"
+        ],
+        "status": "included",
+        "evidence": "赠送赛里木湖跟车视频（ 1团1段视频）"
+      },
+      {
+        "text": "赠送吉克普林滑雪初级道 4小时",
+        "categories": [
+          "skiing",
+          "gift"
+        ],
+        "status": "included",
+        "evidence": "赠送吉克普林滑雪初级道 4小时"
+      },
+      {
+        "text": "提供拍照道具",
+        "categories": [
+          "included"
+        ],
+        "status": "included",
+        "evidence": "提供拍照道具"
+      },
+      {
+        "text": "◎用餐说明：此产品全程不含正餐",
+        "categories": [
+          "excluded"
+        ],
+        "status": "excluded",
+        "evidence": "◎用餐说明：此产品全程不含正餐"
+      },
+      {
+        "text": "除喀纳斯禾木景区民宿不含早餐外",
+        "categories": [
+          "excluded"
+        ],
+        "status": "excluded",
+        "evidence": "除喀纳斯禾木景区民宿不含早餐外"
+      },
+      {
+        "text": "其他酒店均含早餐",
+        "categories": [
+          "included"
+        ],
+        "status": "included",
+        "evidence": "其他酒店均含早餐"
+      },
+      {
+        "text": "◎行前说明：请提供正确的身份证信息",
+        "categories": [
+          "included"
+        ],
+        "status": "included",
+        "evidence": "◎行前说明：请提供正确的身份证信息"
+      },
+      {
+        "text": "我社将按照您提供的身份证信息购买景区门票",
+        "categories": [
+          "included"
+        ],
+        "status": "included",
+        "evidence": "我社将按照您提供的身份证信息购买景区门票"
+      },
+      {
+        "text": "◎联系方式 ：提供准确的联系方式·并保持手机开机状况·以便管家",
+        "categories": [
+          "included"
+        ],
+        "status": "included",
+        "evidence": "◎联系方式 ：提供准确的联系方式·并保持手机开机状况·以便管家"
+      },
+      {
+        "text": "夜滑将军山（若开放，雪票自理） -阿勒泰",
+        "categories": [
+          "skiing",
+          "self_pay"
+        ],
+        "status": "excluded",
+        "evidence": "夜滑将军山（若开放，雪票自理） -阿勒泰"
+      },
+      {
+        "text": "餐食：自理",
+        "categories": [
+          "self_pay"
+        ],
+        "status": "excluded",
+        "evidence": "餐食：自理"
+      },
+      {
+        "text": "我们都提供VIP 专车接机服务",
+        "categories": [
+          "included"
+        ],
+        "status": "included",
+        "evidence": "我们都提供VIP 专车接机服务"
+      },
+      {
+        "text": "第四天：禾木 -禾木吉克普林滑雪场（含 4小时初级道雪票） -雪地“泼水成",
+        "categories": [
+          "skiing",
+          "included"
+        ],
+        "status": "included",
+        "evidence": "第四天：禾木 -禾木吉克普林滑雪场（含 4小时初级道雪票） -雪地“泼水成"
+      },
+      {
+        "text": "头）-赠送•赛湖跟车视频 <每团送1条>",
+        "categories": [
+          "photo",
+          "gift"
+        ],
+        "status": "included",
+        "evidence": "头）-赠送•赛湖跟车视频 <每团送1条>"
+      },
+      {
+        "text": "雪票自理）-阿勒泰  路程大约530 公里 约 7 小时",
+        "categories": [
+          "skiing",
+          "self_pay"
+        ],
+        "status": "excluded",
+        "evidence": "雪票自理）-阿勒泰  路程大约530 公里 约 7 小时"
+      },
+      {
+        "text": "17:00-20:00   乘坐缆车登顶 【阿勒泰将军山】~这里是阿勒泰市区的制高点也是人类滑雪起源",
+        "categories": [
+          "skiing"
+        ],
+        "status": "ambiguous",
+        "evidence": "17:00-20:00   乘坐缆车登顶 【阿勒泰将军山】~这里是阿勒泰市区的制高点也是人类滑雪起源"
+      },
+      {
+        "text": "地~将军山滑雪场的所在地",
+        "categories": [
+          "skiing"
+        ],
+        "status": "ambiguous",
+        "evidence": "地~将军山滑雪场的所在地"
+      },
+      {
+        "text": "22:00-23:00   晚餐自理后",
+        "categories": [
+          "self_pay"
+        ],
+        "status": "excluded",
+        "evidence": "22:00-23:00   晚餐自理后"
+      },
+      {
+        "text": "餐食：酒店含早",
+        "categories": [
+          "included"
+        ],
+        "status": "included",
+        "evidence": "餐食：酒店含早"
+      },
+      {
+        "text": "将军山体验 3【浪漫夜滑】——解锁雪场的 N+1 种快乐（往年通常 11 月中旬滑雪场开始营",
+        "categories": [
+          "skiing"
+        ],
+        "status": "ambiguous",
+        "evidence": "将军山体验 3【浪漫夜滑】——解锁雪场的 N+1 种快乐（往年通常 11 月中旬滑雪场开始营"
+      },
+      {
+        "text": "“夜滑” 是滑雪人冬日里的顶级浪漫",
+        "categories": [
+          "skiing"
+        ],
+        "status": "ambiguous",
+        "evidence": "“夜滑” 是滑雪人冬日里的顶级浪漫"
+      },
+      {
+        "text": "我们特别安排出时间段供滑雪爱好者的选择",
+        "categories": [
+          "skiing"
+        ],
+        "status": "ambiguous",
+        "evidence": "我们特别安排出时间段供滑雪爱好者的选择"
+      },
+      {
+        "text": "可自行夜滑将军山（若开放，雪票",
+        "categories": [
+          "skiing"
+        ],
+        "status": "ambiguous",
+        "evidence": "可自行夜滑将军山（若开放，雪票"
+      },
+      {
+        "text": "场内雪具租赁费不含）",
+        "categories": [
+          "skiing",
+          "excluded"
+        ],
+        "status": "excluded",
+        "evidence": "场内雪具租赁费不含）"
+      },
+      {
+        "text": "午餐景区内自理",
+        "categories": [
+          "self_pay"
+        ],
+        "status": "excluded",
+        "evidence": "午餐景区内自理"
+      },
+      {
+        "text": "禾木体验 2【雪景轻旅拍】——永恒的记忆",
+        "categories": [
+          "photo"
+        ],
+        "status": "ambiguous",
+        "evidence": "禾木体验 2【雪景轻旅拍】——永恒的记忆"
+      },
+      {
+        "text": "赠送9 张精修照片+15 张底片全送",
+        "categories": [
+          "photo",
+          "gift"
+        ],
+        "status": "included",
+        "evidence": "赠送9 张精修照片+15 张底片全送"
+      },
+      {
+        "text": "有热水提供",
+        "categories": [
+          "included"
+        ],
+        "status": "included",
+        "evidence": "有热水提供"
+      },
+      {
+        "text": "第四天 禾木-禾木吉克普林滑雪场 （含4小时初级道雪票）--克拉玛依 【500km",
+        "categories": [
+          "skiing",
+          "included"
+        ],
+        "status": "included",
+        "evidence": "第四天 禾木-禾木吉克普林滑雪场 （含4小时初级道雪票）--克拉玛依 【500km"
+      },
+      {
+        "text": "08:00-09:00 早餐自理",
+        "categories": [
+          "self_pay"
+        ],
+        "status": "excluded",
+        "evidence": "08:00-09:00 早餐自理"
+      },
+      {
+        "text": "前往吉克普林滑雪场游玩（雪场开板后，赠送4小时吉克普",
+        "categories": [
+          "skiing",
+          "gift"
+        ],
+        "status": "included",
+        "evidence": "前往吉克普林滑雪场游玩（雪场开板后，赠送4小时吉克普"
+      },
+      {
+        "text": "林初级滑雪体验票）~这里是亚洲最大滑雪场~粉雪天堂",
+        "categories": [
+          "skiing"
+        ],
+        "status": "ambiguous",
+        "evidence": "林初级滑雪体验票）~这里是亚洲最大滑雪场~粉雪天堂"
+      },
+      {
+        "text": "餐食：三餐自理",
+        "categories": [
+          "self_pay"
+        ],
+        "status": "excluded",
+        "evidence": "餐食：三餐自理"
+      },
+      {
+        "text": "禾木体验 2【吉克普林滑雪】——在雪域之巅追风",
+        "categories": [
+          "skiing"
+        ],
+        "status": "ambiguous",
+        "evidence": "禾木体验 2【吉克普林滑雪】——在雪域之巅追风"
+      },
+      {
+        "text": "才算解锁顶级滑雪体验",
+        "categories": [
+          "skiing"
+        ],
+        "status": "ambiguous",
+        "evidence": "才算解锁顶级滑雪体验"
+      },
+      {
+        "text": "本次赠送初级道滑雪票（ 4 小时日场票，含雪鞋，雪板，雪杖和魔毯）",
+        "categories": [
+          "skiing",
+          "gift"
+        ],
+        "status": "included",
+        "evidence": "本次赠送初级道滑雪票（ 4 小时日场票，含雪鞋，雪板，雪杖和魔毯）"
+      },
+      {
+        "text": "激情滑雪的同时收获无限美景",
+        "categories": [
+          "skiing"
+        ],
+        "status": "ambiguous",
+        "evidence": "激情滑雪的同时收获无限美景"
+      },
+      {
+        "text": "吉克普林国际滑雪度假村介绍：",
+        "categories": [
+          "skiing"
+        ],
+        "status": "ambiguous",
+        "evidence": "吉克普林国际滑雪度假村介绍："
+      },
+      {
+        "text": "禾木吉克普林国际滑雪度假村号称“滑雪爱好者天堂”",
+        "categories": [
+          "skiing"
+        ],
+        "status": "ambiguous",
+        "evidence": "禾木吉克普林国际滑雪度假村号称“滑雪爱好者天堂”"
+      },
+      {
+        "text": "满足各种水平滑雪爱好者",
+        "categories": [
+          "skiing"
+        ],
+        "status": "ambiguous",
+        "evidence": "满足各种水平滑雪爱好者"
+      },
+      {
+        "text": "费用已含初级道日场票",
+        "categories": [
+          "included"
+        ],
+        "status": "included",
+        "evidence": "费用已含初级道日场票"
+      },
+      {
+        "text": "吉克普林滑雪场介绍：",
+        "categories": [
+          "skiing"
+        ],
+        "status": "ambiguous",
+        "evidence": "吉克普林滑雪场介绍："
+      },
+      {
+        "text": "请计划好滑雪时间",
+        "categories": [
+          "skiing"
+        ],
+        "status": "ambiguous",
+        "evidence": "请计划好滑雪时间"
+      },
+      {
+        "text": "费用自理",
+        "categories": [
+          "self_pay"
+        ],
+        "status": "excluded",
+        "evidence": "费用自理"
+      },
+      {
+        "text": "满足各种水平的滑雪爱好者",
+        "categories": [
+          "skiing"
+        ],
+        "status": "ambiguous",
+        "evidence": "满足各种水平的滑雪爱好者"
+      },
+      {
+        "text": "滑雪场最高海拔2848米",
+        "categories": [
+          "skiing"
+        ],
+        "status": "ambiguous",
+        "evidence": "滑雪场最高海拔2848米"
+      },
+      {
+        "text": "为中国滑雪场之最",
+        "categories": [
+          "skiing"
+        ],
+        "status": "ambiguous",
+        "evidence": "为中国滑雪场之最"
+      },
+      {
+        "text": "❆滑雪场规划雪道103条(其中12条满足国际雪联认证要求的国际比赛赛道和28条野雪道)",
+        "categories": [
+          "skiing"
+        ],
+        "status": "ambiguous",
+        "evidence": "❆滑雪场规划雪道103条(其中12条满足国际雪联认证要求的国际比赛赛道和28条野雪道)"
+      },
+      {
+        "text": "❆滑雪场东区及西区设有2个服务中心",
+        "categories": [
+          "skiing"
+        ],
+        "status": "ambiguous",
+        "evidence": "❆滑雪场东区及西区设有2个服务中心"
+      },
+      {
+        "text": "住房一律不含早餐",
+        "categories": [
+          "excluded"
+        ],
+        "status": "excluded",
+        "evidence": "住房一律不含早餐"
+      },
+      {
+        "text": "早餐 需要自理",
+        "categories": [
+          "self_pay"
+        ],
+        "status": "excluded",
+        "evidence": "早餐 需要自理"
+      },
+      {
+        "text": "滑雪一定要做好安全防护",
+        "categories": [
+          "skiing"
+        ],
+        "status": "ambiguous",
+        "evidence": "滑雪一定要做好安全防护"
+      },
+      {
+        "text": "请检查好雪具",
+        "categories": [
+          "skiing"
+        ],
+        "status": "ambiguous",
+        "evidence": "请检查好雪具"
+      },
+      {
+        "text": "禾木吉克普林滑雪场具体价格以景区实际门票为主",
+        "categories": [
+          "skiing"
+        ],
+        "status": "ambiguous",
+        "evidence": "禾木吉克普林滑雪场具体价格以景区实际门票为主"
+      },
+      {
+        "text": "跟车视频（每团送 1 条）-赛湖东门酒店【四钻】 【510km，约 6.5H】",
+        "categories": [
+          "photo"
+        ],
+        "status": "ambiguous",
+        "evidence": "跟车视频（每团送 1 条）-赛湖东门酒店【四钻】 【510km，约 6.5H】"
+      },
+      {
+        "text": "中途自理享用午餐",
+        "categories": [
+          "self_pay"
+        ],
+        "status": "excluded",
+        "evidence": "中途自理享用午餐"
+      },
+      {
+        "text": "赠送【赛湖跟车视频】 （每团送1 条）",
+        "categories": [
+          "photo",
+          "gift"
+        ],
+        "status": "included",
+        "evidence": "赠送【赛湖跟车视频】 （每团送1 条）"
+      },
+      {
+        "text": "提供日出专线前往点将台附近观看最美日出",
+        "categories": [
+          "included"
+        ],
+        "status": "included",
+        "evidence": "提供日出专线前往点将台附近观看最美日出"
+      },
+      {
+        "text": "车费自理）",
+        "categories": [
+          "self_pay"
+        ],
+        "status": "excluded",
+        "evidence": "车费自理）"
+      },
+      {
+        "text": "可将行李免费寄存在",
+        "categories": [
+          "included"
+        ],
+        "status": "included",
+        "evidence": "可将行李免费寄存在"
+      },
+      {
+        "text": "部分用餐 ：酒店含早餐",
+        "categories": [
+          "included"
+        ],
+        "status": "included",
+        "evidence": "部分用餐 ：酒店含早餐"
+      },
+      {
+        "text": "禾木不含早餐",
+        "categories": [
+          "excluded"
+        ],
+        "status": "excluded",
+        "evidence": "禾木不含早餐"
+      },
+      {
+        "text": "无法提供详细讲解服务",
+        "categories": [
+          "included"
+        ],
+        "status": "included",
+        "evidence": "无法提供详细讲解服务"
+      },
+      {
+        "text": "本团已含司机食宿",
+        "categories": [
+          "included"
+        ],
+        "status": "included",
+        "evidence": "本团已含司机食宿"
+      },
+      {
+        "text": "费用不含：",
+        "categories": [
+          "excluded"
+        ],
+        "status": "excluded",
+        "evidence": "费用不含："
+      },
+      {
+        "text": "当地餐食：不含全程正餐",
+        "categories": [
+          "excluded"
+        ],
+        "status": "excluded",
+        "evidence": "当地餐食：不含全程正餐"
+      },
+      {
+        "text": "不提供自然单间",
+        "categories": [
+          "excluded"
+        ],
+        "status": "excluded",
+        "evidence": "不提供自然单间"
+      },
+      {
+        "text": "项目及费用包含未提及的其他消费均不含",
+        "categories": [
+          "excluded"
+        ],
+        "status": "excluded",
+        "evidence": "项目及费用包含未提及的其他消费均不含"
+      },
+      {
+        "text": "以上两种情况产生的消费费用及包含中未提及的任何费用请游客自行承担",
+        "categories": [
+          "included"
+        ],
+        "status": "included",
+        "evidence": "以上两种情况产生的消费费用及包含中未提及的任何费用请游客自行承担"
+      },
+      {
+        "text": "意外保险：本次行程由旅行社出资为您提供一份旅游意外险",
+        "categories": [
+          "included"
+        ],
+        "status": "included",
+        "evidence": "意外保险：本次行程由旅行社出资为您提供一份旅游意外险"
+      },
+      {
+        "text": "建议游客可自行购买更高额的险种",
+        "categories": [
+          "self_pay"
+        ],
+        "status": "excluded",
+        "evidence": "建议游客可自行购买更高额的险种"
+      },
+      {
+        "text": "司导服务：本团没有导游",
+        "categories": [
+          "excluded"
+        ],
+        "status": "excluded",
+        "evidence": "司导服务：本团没有导游"
+      },
+      {
+        "text": "行程包含往返大",
+        "categories": [
+          "included"
+        ],
+        "status": "included",
+        "evidence": "行程包含往返大"
+      },
+      {
+        "text": "续住费用需由您自理",
+        "categories": [
+          "self_pay"
+        ],
+        "status": "excluded",
+        "evidence": "续住费用需由您自理"
+      },
+      {
+        "text": "同时可协助提供相关证明",
+        "categories": [
+          "included"
+        ],
+        "status": "included",
+        "evidence": "同时可协助提供相关证明"
+      }
+    ]
+  },
+  {
+    "code": "D12",
+    "title": "臻品· 双湖8日1+1头等舱",
+    "days": 8,
+    "nights": 7,
+    "group_size": "2-6 人小团",
+    "vehicle": "臻品· 双湖8日1+1头等舱",
+    "route": [
+      "出发地",
+      "乌鲁木齐",
+      "指定璞舍带浴缸",
+      "S21沙漠高速",
+      "阿勒泰",
+      "雾凇雪景",
+      "喀纳斯湖",
+      "喀纳斯雪地",
+      "喀纳斯",
+      "喀纳斯三湾",
+      "解锁禾",
+      "禾木",
+      "禾木晨曦",
+      "雪场开放后赠"
+    ],
+    "stays": [
+      {
+        "place": "乌鲁木齐",
+        "level": "五钻 -指定璞舍带浴缸",
+        "note": ""
+      },
+      {
+        "place": "",
+        "level": "",
+        "note": "赛里木湖潮克星空营地"
+      }
+    ],
+    "gifts": [
+      "赠送赛湖航拍短片（跟车视频）",
+      "第七天：赛里木湖 -二进赛里木湖 -赛湖追风记 <跟车视频全团赠送 1 段航拍 >-乌",
+      "赠送将军山【落日观光缆车 ・ 落日狂欢派对 ・ 云端电音蹦迪】一套全安",
+      "今日我们体验 【雪地摩托车】 (赠送项目，开放安排 -11月",
+      "【 图瓦人家访 -冰屋打卡 -新疆地道奶茶品尝 】 (赠送项目，开放安排 -11月 20后雪场",
+      "DAY5|禾木 -禾木晨曦（雪场未开放自行打卡哈登观景平台） -（雪场开放后赠 :4H吉克普林初级…",
+      "本次赠送 4小时初级道滑雪体验",
+      "（赠：鸡尾酒  /咖啡）赛里木湖东门小镇",
+      "DAY7| 赛里木湖 -二进赛里木湖 -赛湖追风记 <跟车视频全团赠送 1 段航拍 >-乌鲁木齐",
+      "今天 特别赠送 <跟车视频全团赠送 1 段航拍 >",
+      "2.赠送 4小时吉克普林初级滑雪体验：景区正式营业后",
+      "4.单反拍摄（ 15 张照片）：赠送项目",
+      "5.赛湖跟车视频：赠送项目：如未拍摄"
+    ],
+    "self_pay": [
+      "用餐：三餐自理",
+      "中晚餐自理",
+      "可自费升级",
+      "正餐请自理",
+      "丰俭由人且费用自理",
+      "7. 自费骑马提示：若您在行程中想参与骑马等自费项目"
+    ],
+    "excluded": [
+      "云端电音蹦迪 party .橘子海落日 Blue Hour） -将军山夜滑（自行选择 → 不含雪",
+      "游览（今日不含单独用车）",
+      "海落日 Blue Hour） -将军山夜滑（自行选择不含雪票） -阿勒泰",
+      "不含接送服务",
+      "白哈巴景区住宿不含早餐",
+      "4.喀纳斯 /禾木不含早餐",
+      "4.禾木不含早餐",
+      "禾木 /贾登峪 /白哈巴不含早餐",
+      "儿童： 儿童只含单车费（不含门票 +区间车和住宿费，不含餐）",
+      "费用不含"
+    ],
+    "skiing": "是雪友私藏的滑雪乌托邦；新手亦可解锁山野滑雪的快乐（ 11月 20后雪场开放安排）；:4H吉克普林初级滑雪体验 → 预计 11月 20号以后安排；海落日 Blue Hour） -将军山夜滑（自行选择不含雪票）…（共 27 条）",
+    "photography": "赠送赛湖航拍短片（跟车视频）；定格雪域公路的浪漫瞬间（全团 1段航拍）；配备单反（ 15张照片） +咖啡机（仅一次）；第七天：赛里木湖 -二进赛里木湖 -赛湖追风记 <跟车视频全团…（共 8 条）",
+    "audience": "单人",
+    "source_file": "D12臻品・双湖8日（福特T8）",
+    "extractor": "rules",
+    "facts": {
+      "用车": {
+        "status": "included",
+        "value": "客指定车型的要求",
+        "evidence": [
+          "客指定车型的要求",
+          "专属 1+1 头等舱福特 T8",
+          "本社严格选用具备合法营运资质的商务车型"
+        ]
+      },
+      "团型": {
+        "status": "included",
+        "value": "2-6人小团上线",
+        "evidence": [
+          "2-6人小团上线",
+          "本线路为 2-6 人小团拼车游",
+          "本行程为全国 2-6人拼团模式"
+        ]
+      },
+      "滑雪": {
+        "status": "ambiguous",
+        "value": "是雪友私藏的滑雪乌托邦；新手亦可解锁山野滑雪的快乐（ 11月 20后雪场开放安排）；:4H吉克普林初级滑雪体验 → 预计 11月 20号以后安排；海落日 Blue Hour） -将军山夜滑（自行选择不含雪票）…（共 27 条）",
+        "evidence": [
+          "是雪友私藏的滑雪乌托邦",
+          "新手亦可解锁山野滑雪的快乐（ 11月 20后雪场开放安排）",
+          ":4H吉克普林初级滑雪体验 → 预计 11月 20号以后安排",
+          "海落日 Blue Hour） -将军山夜滑（自行选择不含雪票） -阿勒泰"
+        ]
+      },
+      "旅拍": {
+        "status": "ambiguous",
+        "value": "赠送赛湖航拍短片（跟车视频）；定格雪域公路的浪漫瞬间（全团 1段航拍）；配备单反（ 15张照片） +咖啡机（仅一次）；第七天：赛里木湖 -二进赛里木湖 -赛湖追风记 <跟车视频全团…（共 8 条）",
+        "evidence": [
+          "赠送赛湖航拍短片（跟车视频）",
+          "定格雪域公路的浪漫瞬间（全团 1段航拍）",
+          "配备单反（ 15张照片） +咖啡机（仅一次）",
+          "第七天：赛里木湖 -二进赛里木湖 -赛湖追风记 <跟车视频全团赠送 1 段航拍 >-乌"
+        ]
+      },
+      "定位人群": {
+        "status": "unknown",
+        "value": "",
+        "evidence": []
+      },
+      "赠送项目": {
+        "status": "included",
+        "value": "赠送将军山【落日观光缆车 ・ 落日狂欢派对 ・ 云端电音蹦迪】…；今日我们体验 【雪地摩托车】 (赠送项目，开放安排 -11月；【 图瓦人家访 -冰屋打卡 -新疆地道奶茶品尝 】 (赠送项目…；（赠：鸡尾酒  /咖啡）赛里木湖东门小镇",
+        "evidence": [
+          "赠送将军山【落日观光缆车 ・ 落日狂欢派对 ・ 云端电音蹦迪】一套全安",
+          "今日我们体验 【雪地摩托车】 (赠送项目，开放安排 -11月",
+          "【 图瓦人家访 -冰屋打卡 -新疆地道奶茶品尝 】 (赠送项目，开放安排 -11月 20后雪场",
+          "（赠：鸡尾酒  /咖啡）赛里木湖东门小镇"
+        ]
+      },
+      "需自理": {
+        "status": "excluded",
+        "value": "用餐：三餐自理；中晚餐自理；可自费升级；正餐请自理（共 15 条）",
+        "evidence": [
+          "用餐：三餐自理",
+          "中晚餐自理",
+          "可自费升级",
+          "正餐请自理"
+        ]
+      },
+      "包含服务": {
+        "status": "included",
+        "value": "把冬日浪漫收好（酒店内包含）；含雪鞋 .雪板 .雪杖和魔毯；用餐：酒店含早；点起马灯（提供马灯）定格独属于禾木的治愈氛围感大片（共 22 条）",
+        "evidence": [
+          "把冬日浪漫收好（酒店内包含）",
+          "含雪鞋 .雪板 .雪杖和魔毯",
+          "用餐：酒店含早",
+          "点起马灯（提供马灯）定格独属于禾木的治愈氛围感大片"
+        ]
+      },
+      "行程天数": {
+        "status": "included",
+        "value": "8 天 7 晚",
+        "evidence": [
+          "臻品· 双湖8日1+1头等舱",
+          "骑雪地摩托闯入喀纳斯粉雪林海，于冰面自由狂飙（ 11月 20日落地营业起安排）"
+        ]
+      },
+      "住宿配置": {
+        "status": "included",
+        "value": "乌鲁木齐 五钻 -指定璞舍带浴缸；（赛里木湖潮克星空营地）",
+        "evidence": [
+          "第一天：出发地 -乌鲁木齐 住：乌鲁木齐【五钻 -指定璞舍带浴缸】"
+        ]
+      },
+      "行程覆盖": {
+        "status": "included",
+        "value": "出发地 → 乌鲁木齐 → 指定璞舍带浴缸 → S21沙漠高速 → 阿勒泰 → 雾凇雪景 → 喀纳斯湖 → 喀纳斯雪地 → 喀纳斯 → 喀纳斯三湾",
+        "evidence": [
+          "第一天：出发地 -乌鲁木齐 住：乌鲁木齐【五钻 -指定璞舍带浴缸】",
+          "第二天：乌鲁木齐 -S21沙漠高速 -将军山（浪漫落日观光缆车 ・ 落日狂欢派…",
+          "第三天：阿勒泰 -雾凇雪景 -喀纳斯湖（坠入喀纳斯冬日冰雪梦境） -喀纳斯雪地",
+          "第四天：喀纳斯 -喀纳斯三湾（神仙湾 ・ 月亮湾 ・ 卧龙湾寻觅冬日雾境） -…"
+        ]
+      }
+    },
+    "items": [
+      {
+        "text": "是雪友私藏的滑雪乌托邦",
+        "categories": [
+          "skiing"
+        ],
+        "status": "ambiguous",
+        "evidence": "是雪友私藏的滑雪乌托邦"
+      },
+      {
+        "text": "新手亦可解锁山野滑雪的快乐（ 11月 20后雪场开放安排）",
+        "categories": [
+          "skiing"
+        ],
+        "status": "ambiguous",
+        "evidence": "新手亦可解锁山野滑雪的快乐（ 11月 20后雪场开放安排）"
+      },
+      {
+        "text": "赠送赛湖航拍短片（跟车视频）",
+        "categories": [
+          "photo",
+          "gift"
+        ],
+        "status": "included",
+        "evidence": "赠送赛湖航拍短片（跟车视频）"
+      },
+      {
+        "text": "定格雪域公路的浪漫瞬间（全团 1段航拍）",
+        "categories": [
+          "photo"
+        ],
+        "status": "ambiguous",
+        "evidence": "定格雪域公路的浪漫瞬间（全团 1段航拍）"
+      },
+      {
+        "text": "把冬日浪漫收好（酒店内包含）",
+        "categories": [
+          "included"
+        ],
+        "status": "included",
+        "evidence": "把冬日浪漫收好（酒店内包含）"
+      },
+      {
+        "text": "配备单反（ 15张照片） +咖啡机（仅一次）",
+        "categories": [
+          "photo"
+        ],
+        "status": "ambiguous",
+        "evidence": "配备单反（ 15张照片） +咖啡机（仅一次）"
+      },
+      {
+        "text": "云端电音蹦迪 party .橘子海落日 Blue Hour） -将军山夜滑（自行选择 → 不含雪",
+        "categories": [
+          "excluded"
+        ],
+        "status": "excluded",
+        "evidence": "云端电音蹦迪 party .橘子海落日 Blue Hour） -将军山夜滑（自行选择 → 不含雪"
+      },
+      {
+        "text": ":4H吉克普林初级滑雪体验 → 预计 11月 20号以后安排",
+        "categories": [
+          "skiing"
+        ],
+        "status": "ambiguous",
+        "evidence": ":4H吉克普林初级滑雪体验 → 预计 11月 20号以后安排"
+      },
+      {
+        "text": "含雪鞋 .雪板 .雪杖和魔毯",
+        "categories": [
+          "included"
+        ],
+        "status": "included",
+        "evidence": "含雪鞋 .雪板 .雪杖和魔毯"
+      },
+      {
+        "text": "第七天：赛里木湖 -二进赛里木湖 -赛湖追风记 <跟车视频全团赠送 1 段航拍 >-乌",
+        "categories": [
+          "photo",
+          "gift"
+        ],
+        "status": "included",
+        "evidence": "第七天：赛里木湖 -二进赛里木湖 -赛湖追风记 <跟车视频全团赠送 1 段航拍 >-乌"
+      },
+      {
+        "text": "游览（今日不含单独用车）",
+        "categories": [
+          "excluded"
+        ],
+        "status": "excluded",
+        "evidence": "游览（今日不含单独用车）"
+      },
+      {
+        "text": "用餐：三餐自理",
+        "categories": [
+          "self_pay"
+        ],
+        "status": "excluded",
+        "evidence": "用餐：三餐自理"
+      },
+      {
+        "text": "海落日 Blue Hour） -将军山夜滑（自行选择不含雪票） -阿勒泰",
+        "categories": [
+          "skiing",
+          "excluded"
+        ],
+        "status": "excluded",
+        "evidence": "海落日 Blue Hour） -将军山夜滑（自行选择不含雪票） -阿勒泰"
+      },
+      {
+        "text": "用餐：酒店含早",
+        "categories": [
+          "included"
+        ],
+        "status": "included",
+        "evidence": "用餐：酒店含早"
+      },
+      {
+        "text": "中晚餐自理",
+        "categories": [
+          "self_pay"
+        ],
+        "status": "excluded",
+        "evidence": "中晚餐自理"
+      },
+      {
+        "text": "赠送将军山【落日观光缆车 ・ 落日狂欢派对 ・ 云端电音蹦迪】一套全安",
+        "categories": [
+          "gift"
+        ],
+        "status": "included",
+        "evidence": "赠送将军山【落日观光缆车 ・ 落日狂欢派对 ・ 云端电音蹦迪】一套全安"
+      },
+      {
+        "text": "20:30-21:00滑雪爱好者可在雪场开放后 自行购票体验将军山夜滑",
+        "categories": [
+          "skiing"
+        ],
+        "status": "ambiguous",
+        "evidence": "20:30-21:00滑雪爱好者可在雪场开放后 自行购票体验将军山夜滑"
+      },
+      {
+        "text": "不滑雪的",
+        "categories": [
+          "skiing"
+        ],
+        "status": "ambiguous",
+        "evidence": "不滑雪的"
+      },
+      {
+        "text": "10.滑雪爱好者可在雪场开放后 自行购票体验将军山夜滑",
+        "categories": [
+          "skiing"
+        ],
+        "status": "ambiguous",
+        "evidence": "10.滑雪爱好者可在雪场开放后 自行购票体验将军山夜滑"
+      },
+      {
+        "text": "不含接送服务",
+        "categories": [
+          "excluded"
+        ],
+        "status": "excluded",
+        "evidence": "不含接送服务"
+      },
+      {
+        "text": "滑雪务必注意安全",
+        "categories": [
+          "skiing"
+        ],
+        "status": "ambiguous",
+        "evidence": "滑雪务必注意安全"
+      },
+      {
+        "text": "今日我们体验 【雪地摩托车】 (赠送项目，开放安排 -11月",
+        "categories": [
+          "gift"
+        ],
+        "status": "included",
+        "evidence": "今日我们体验 【雪地摩托车】 (赠送项目，开放安排 -11月"
+      },
+      {
+        "text": "【 图瓦人家访 -冰屋打卡 -新疆地道奶茶品尝 】 (赠送项目，开放安排 -11月 20后雪场",
+        "categories": [
+          "gift"
+        ],
+        "status": "included",
+        "evidence": "【 图瓦人家访 -冰屋打卡 -新疆地道奶茶品尝 】 (赠送项目，开放安排 -11月 20后雪场"
+      },
+      {
+        "text": "白哈巴景区住宿不含早餐",
+        "categories": [
+          "excluded"
+        ],
+        "status": "excluded",
+        "evidence": "白哈巴景区住宿不含早餐"
+      },
+      {
+        "text": "点起马灯（提供马灯）定格独属于禾木的治愈氛围感大片",
+        "categories": [
+          "included"
+        ],
+        "status": "included",
+        "evidence": "点起马灯（提供马灯）定格独属于禾木的治愈氛围感大片"
+      },
+      {
+        "text": "无论滑雪骑马等注意安全穿防滑的鞋子",
+        "categories": [
+          "skiing"
+        ],
+        "status": "ambiguous",
+        "evidence": "无论滑雪骑马等注意安全穿防滑的鞋子"
+      },
+      {
+        "text": "4.喀纳斯 /禾木不含早餐",
+        "categories": [
+          "excluded"
+        ],
+        "status": "excluded",
+        "evidence": "4.喀纳斯 /禾木不含早餐"
+      },
+      {
+        "text": "免费活动无",
+        "categories": [
+          "included"
+        ],
+        "status": "included",
+        "evidence": "免费活动无"
+      },
+      {
+        "text": "DAY5|禾木 -禾木晨曦（雪场未开放自行打卡哈登观景平台） -（雪场开放后赠 :4H吉克普林初级…",
+        "categories": [
+          "skiing",
+          "gift"
+        ],
+        "status": "included",
+        "evidence": "DAY5|禾木 -禾木晨曦（雪场未开放自行打卡哈登观景平台） -（雪场开放后赠 :4H吉克普林初级滑雪体验"
+      },
+      {
+        "text": "今日主题：吉克普林滑雪",
+        "categories": [
+          "skiing"
+        ],
+        "status": "ambiguous",
+        "evidence": "今日主题：吉克普林滑雪"
+      },
+      {
+        "text": "根据吉克普林滑雪场开放情况安排滑雪体验 （雪场常规开放时间为 11月下旬 -12月初，报名",
+        "categories": [
+          "skiing"
+        ],
+        "status": "ambiguous",
+        "evidence": "根据吉克普林滑雪场开放情况安排滑雪体验 （雪场常规开放时间为 11月下旬 -12月初，报名"
+      },
+      {
+        "text": "前务必注意） 吉克普林滑雪场被誉为国内粉雪天花板",
+        "categories": [
+          "skiing"
+        ],
+        "status": "ambiguous",
+        "evidence": "前务必注意） 吉克普林滑雪场被誉为国内粉雪天花板"
+      },
+      {
+        "text": "也是亚洲大型滑雪场",
+        "categories": [
+          "skiing"
+        ],
+        "status": "ambiguous",
+        "evidence": "也是亚洲大型滑雪场"
+      },
+      {
+        "text": "适配新手及各类滑雪爱好者",
+        "categories": [
+          "skiing"
+        ],
+        "status": "ambiguous",
+        "evidence": "适配新手及各类滑雪爱好者"
+      },
+      {
+        "text": "本次赠送 4小时初级道滑雪体验",
+        "categories": [
+          "skiing",
+          "gift"
+        ],
+        "status": "included",
+        "evidence": "本次赠送 4小时初级道滑雪体验"
+      },
+      {
+        "text": "全套滑雪装备（雪鞋，雪板，雪杖）",
+        "categories": [
+          "skiing"
+        ],
+        "status": "ambiguous",
+        "evidence": "全套滑雪装备（雪鞋，雪板，雪杖）"
+      },
+      {
+        "text": "初级道雪票及魔毯体验全部包含",
+        "categories": [
+          "skiing",
+          "included"
+        ],
+        "status": "included",
+        "evidence": "初级道雪票及魔毯体验全部包含"
+      },
+      {
+        "text": "4.禾木不含早餐",
+        "categories": [
+          "excluded"
+        ],
+        "status": "excluded",
+        "evidence": "4.禾木不含早餐"
+      },
+      {
+        "text": "9.初级道滑雪套餐包含学具（雪鞋，雪板，雪杖）  +雪票",
+        "categories": [
+          "skiing",
+          "included"
+        ],
+        "status": "included",
+        "evidence": "9.初级道滑雪套餐包含学具（雪鞋，雪板，雪杖）  +雪票"
+      },
+      {
+        "text": "如您想体验高级道滑雪",
+        "categories": [
+          "skiing"
+        ],
+        "status": "ambiguous",
+        "evidence": "如您想体验高级道滑雪"
+      },
+      {
+        "text": "可自费升级",
+        "categories": [
+          "self_pay"
+        ],
+        "status": "excluded",
+        "evidence": "可自费升级"
+      },
+      {
+        "text": "滑雪时请注意安全",
+        "categories": [
+          "skiing"
+        ],
+        "status": "ambiguous",
+        "evidence": "滑雪时请注意安全"
+      },
+      {
+        "text": "10.滑雪期间和自由活动期间注意人身和财产安全",
+        "categories": [
+          "skiing"
+        ],
+        "status": "ambiguous",
+        "evidence": "10.滑雪期间和自由活动期间注意人身和财产安全"
+      },
+      {
+        "text": "（赠：鸡尾酒  /咖啡）赛里木湖东门小镇",
+        "categories": [
+          "gift"
+        ],
+        "status": "included",
+        "evidence": "（赠：鸡尾酒  /咖啡）赛里木湖东门小镇"
+      },
+      {
+        "text": "随房打包包含",
+        "categories": [
+          "included"
+        ],
+        "status": "included",
+        "evidence": "随房打包包含"
+      },
+      {
+        "text": "DAY7| 赛里木湖 -二进赛里木湖 -赛湖追风记 <跟车视频全团赠送 1 段航拍 >-乌鲁木齐",
+        "categories": [
+          "photo",
+          "gift"
+        ],
+        "status": "included",
+        "evidence": "DAY7| 赛里木湖 -二进赛里木湖 -赛湖追风记 <跟车视频全团赠送 1 段航拍 >-乌鲁木齐"
+      },
+      {
+        "text": "今天 特别赠送 <跟车视频全团赠送 1 段航拍 >",
+        "categories": [
+          "photo",
+          "gift"
+        ],
+        "status": "included",
+        "evidence": "今天 特别赠送 <跟车视频全团赠送 1 段航拍 >"
+      },
+      {
+        "text": "儿童必须含",
+        "categories": [
+          "included"
+        ],
+        "status": "included",
+        "evidence": "儿童必须含"
+      },
+      {
+        "text": "包含（喀禾冬季套票，赛里木湖自驾票）",
+        "categories": [
+          "included"
+        ],
+        "status": "included",
+        "evidence": "包含（喀禾冬季套票，赛里木湖自驾票）"
+      },
+      {
+        "text": "已含司机食宿费用",
+        "categories": [
+          "included"
+        ],
+        "status": "included",
+        "evidence": "已含司机食宿费用"
+      },
+      {
+        "text": "无法提供详细讲解服务",
+        "categories": [
+          "included"
+        ],
+        "status": "included",
+        "evidence": "无法提供详细讲解服务"
+      },
+      {
+        "text": "餐食： 此行程酒店含早餐",
+        "categories": [
+          "included"
+        ],
+        "status": "included",
+        "evidence": "餐食： 此行程酒店含早餐"
+      },
+      {
+        "text": "禾木 /贾登峪 /白哈巴不含早餐",
+        "categories": [
+          "excluded"
+        ],
+        "status": "excluded",
+        "evidence": "禾木 /贾登峪 /白哈巴不含早餐"
+      },
+      {
+        "text": "正餐请自理",
+        "categories": [
+          "self_pay"
+        ],
+        "status": "excluded",
+        "evidence": "正餐请自理"
+      },
+      {
+        "text": "儿童： 儿童只含单车费（不含门票 +区间车和住宿费，不含餐）",
+        "categories": [
+          "excluded"
+        ],
+        "status": "excluded",
+        "evidence": "儿童： 儿童只含单车费（不含门票 +区间车和住宿费，不含餐）"
+      },
+      {
+        "text": "含于景区套餐内",
+        "categories": [
+          "included"
+        ],
+        "status": "included",
+        "evidence": "含于景区套餐内"
+      },
+      {
+        "text": "2.赠送 4小时吉克普林初级滑雪体验：景区正式营业后",
+        "categories": [
+          "skiing",
+          "gift"
+        ],
+        "status": "included",
+        "evidence": "2.赠送 4小时吉克普林初级滑雪体验：景区正式营业后"
+      },
+      {
+        "text": "4.单反拍摄（ 15 张照片）：赠送项目",
+        "categories": [
+          "photo",
+          "gift"
+        ],
+        "status": "included",
+        "evidence": "4.单反拍摄（ 15 张照片）：赠送项目"
+      },
+      {
+        "text": "5.赛湖跟车视频：赠送项目：如未拍摄",
+        "categories": [
+          "photo",
+          "gift"
+        ],
+        "status": "included",
+        "evidence": "5.赛湖跟车视频：赠送项目：如未拍摄"
+      },
+      {
+        "text": "费用不含",
+        "categories": [
+          "excluded"
+        ],
+        "status": "excluded",
+        "evidence": "费用不含"
+      },
+      {
+        "text": "以上情况产生的费用及费用包含中未提及的所有费用",
+        "categories": [
+          "included"
+        ],
+        "status": "included",
+        "evidence": "以上情况产生的费用及费用包含中未提及的所有费用"
+      },
+      {
+        "text": "除提供健康证明外",
+        "categories": [
+          "included"
+        ],
+        "status": "included",
+        "evidence": "除提供健康证明外"
+      },
+      {
+        "text": "4. 单独出行的未成年人：未满 18周岁者参团需提供监护人授权书",
+        "categories": [
+          "included"
+        ],
+        "status": "included",
+        "evidence": "4. 单独出行的未成年人：未满 18周岁者参团需提供监护人授权书"
+      },
+      {
+        "text": "5.禾木滑雪等其他冰上项目仅在冬季开放",
+        "categories": [
+          "skiing"
+        ],
+        "status": "ambiguous",
+        "evidence": "5.禾木滑雪等其他冰上项目仅在冬季开放"
+      },
+      {
+        "text": "A方案：更换阿勒泰周边替代景区游览（包含将军山滑雪场等周边景点）",
+        "categories": [
+          "skiing",
+          "included"
+        ],
+        "status": "included",
+        "evidence": "A方案：更换阿勒泰周边替代景区游览（包含将军山滑雪场等周边景点）"
+      },
+      {
+        "text": "我社将全程提供专业方案对接服务",
+        "categories": [
+          "included"
+        ],
+        "status": "included",
+        "evidence": "我社将全程提供专业方案对接服务"
+      },
+      {
+        "text": "等候期间车内全程提供暖气",
+        "categories": [
+          "included"
+        ],
+        "status": "included",
+        "evidence": "等候期间车内全程提供暖气"
+      },
+      {
+        "text": "防滑雪地靴",
+        "categories": [
+          "skiing"
+        ],
+        "status": "ambiguous",
+        "evidence": "防滑雪地靴"
+      },
+      {
+        "text": "滑雪裤",
+        "categories": [
+          "skiing"
+        ],
+        "status": "ambiguous",
+        "evidence": "滑雪裤"
+      },
+      {
+        "text": "丰俭由人且费用自理",
+        "categories": [
+          "self_pay"
+        ],
+        "status": "excluded",
+        "evidence": "丰俭由人且费用自理"
+      },
+      {
+        "text": "团费费用仅包含单人单床费用",
+        "categories": [
+          "included"
+        ],
+        "status": "included",
+        "evidence": "团费费用仅包含单人单床费用"
+      },
+      {
+        "text": "提供景点专业讲解服务",
+        "categories": [
+          "included"
+        ],
+        "status": "included",
+        "evidence": "提供景点专业讲解服务"
+      },
+      {
+        "text": "我们将第一时间为您提供协助",
+        "categories": [
+          "included"
+        ],
+        "status": "included",
+        "evidence": "我们将第一时间为您提供协助"
+      },
+      {
+        "text": "7. 自费骑马提示：若您在行程中想参与骑马等自费项目",
+        "categories": [
+          "self_pay"
+        ],
+        "status": "excluded",
+        "evidence": "7. 自费骑马提示：若您在行程中想参与骑马等自费项目"
+      },
+      {
+        "text": "请务必提供准确",
+        "categories": [
+          "included"
+        ],
+        "status": "included",
+        "evidence": "请务必提供准确"
+      },
+      {
+        "text": "若因游客个人原因提供的信息不准",
+        "categories": [
+          "included"
+        ],
+        "status": "included",
+        "evidence": "若因游客个人原因提供的信息不准"
+      }
+    ]
+  },
+  {
+    "code": "M1-A",
+    "title": "粉雪冬日7天6晚",
+    "days": 7,
+    "nights": 6,
+    "group_size": "2-6 人小团",
+    "vehicle": "正规营运资质7座车 安全舒适",
+    "route": [
+      "乌鲁木齐",
+      "S21沙漠公路",
+      "克拉美丽沙漠公园",
+      "途观乌伦古湖",
+      "入住阿勒泰",
+      "阿勒泰",
+      "梦幻喀纳斯湖",
+      "雾凇雪景",
+      "雪蘑菇",
+      "月亮湾",
+      "卧龙湾",
+      "禾木雪村",
+      "放空观星",
+      "入住禾木景区内住宿"
+    ],
+    "stays": [],
+    "gifts": [
+      "跟车视频<每团赠送1条>-自由打卡四大场景：露天蓝调民族音乐会+火焰"
+    ],
+    "self_pay": [
+      "DAY2 乌鲁木齐-S21沙漠公路-克拉美丽沙漠公园-途观乌伦古湖-将军山落日缆车+夕阳派对+雪山…",
+      "住宿：乌鲁木齐 用餐：自理",
+      "住宿：克拉玛依 用餐：自理"
+    ],
+    "excluded": [],
+    "skiing": "DAY2 乌鲁木齐-S21沙漠公路-克拉美丽沙漠公园-途观乌伦…",
+    "photography": "跟车视频<每团赠送1条>-自由打卡四大场景：露天蓝调民族音乐会…；民族服饰换装+9张精修；赛湖Tank跟车视频；无人机航拍视频（共 5 条）",
+    "audience": "单人",
+    "source_file": "M1-A 粉雪冬日7天6晚",
+    "extractor": "rules",
+    "facts": {
+      "用车": {
+        "status": "included",
+        "value": "头等舱",
+        "evidence": [
+          "头等舱",
+          "1+1头等舱旅程更舒适",
+          "正规营运资质7座车 安全舒适"
+        ]
+      },
+      "团型": {
+        "status": "included",
+        "value": "2- 6人小团",
+        "evidence": [
+          "2- 6人小团"
+        ]
+      },
+      "滑雪": {
+        "status": "excluded",
+        "value": "DAY2 乌鲁木齐-S21沙漠公路-克拉美丽沙漠公园-途观乌伦…",
+        "evidence": [
+          "DAY2 乌鲁木齐-S21沙漠公路-克拉美丽沙漠公园-途观乌伦古湖-将军山落日缆车+夕阳派对+雪山蹦迪<开放安排，将军…"
+        ]
+      },
+      "旅拍": {
+        "status": "ambiguous",
+        "value": "跟车视频<每团赠送1条>-自由打卡四大场景：露天蓝调民族音乐会…；民族服饰换装+9张精修；赛湖Tank跟车视频；无人机航拍视频（共 5 条）",
+        "evidence": [
+          "跟车视频<每团赠送1条>-自由打卡四大场景：露天蓝调民族音乐会+火焰",
+          "民族服饰换装+9张精修",
+          "赛湖Tank跟车视频",
+          "无人机航拍视频"
+        ]
+      },
+      "定位人群": {
+        "status": "unknown",
+        "value": "",
+        "evidence": []
+      },
+      "赠送项目": {
+        "status": "included",
+        "value": "共 1 项，详情见「旅拍」维度",
+        "evidence": [
+          "跟车视频<每团赠送1条>-自由打卡四大场景：露天蓝调民族音乐会+火焰"
+        ]
+      },
+      "需自理": {
+        "status": "excluded",
+        "value": "住宿：乌鲁木齐 用餐：自理；住宿：克拉玛依 用餐：自理",
+        "evidence": [
+          "住宿：乌鲁木齐 用餐：自理",
+          "住宿：克拉玛依 用餐：自理"
+        ]
+      },
+      "包含服务": {
+        "status": "included",
+        "value": "含一套；每日提供游玩攻略",
+        "evidence": [
+          "含一套",
+          "每日提供游玩攻略"
+        ]
+      },
+      "行程天数": {
+        "status": "included",
+        "value": "7 天 6 晚",
+        "evidence": [
+          "文件名：M1-A 粉雪冬日7天6晚"
+        ]
+      },
+      "住宿配置": {
+        "status": "unknown",
+        "value": "",
+        "evidence": []
+      },
+      "行程覆盖": {
+        "status": "included",
+        "value": "乌鲁木齐 → S21沙漠公路 → 克拉美丽沙漠公园 → 途观乌伦古湖 → 入住阿勒泰 → 阿勒泰 → 梦幻喀纳斯湖 → 雾凇雪景 → 雪蘑菇 → 月亮湾",
+        "evidence": [
+          "DAY2 乌鲁木齐-S21沙漠公路-克拉美丽沙漠公园-途观乌伦古湖-将军山落日…",
+          "DAY3 阿勒泰-梦幻喀纳斯湖-雾凇雪景-雪蘑菇-喀纳斯三湾<神仙湾-月亮湾-…"
+        ]
+      }
+    },
+    "items": [
+      {
+        "text": "跟车视频<每团赠送1条>-自由打卡四大场景：露天蓝调民族音乐会+火焰",
+        "categories": [
+          "photo",
+          "gift"
+        ],
+        "status": "included",
+        "evidence": "跟车视频<每团赠送1条>-自由打卡四大场景：露天蓝调民族音乐会+火焰"
+      },
+      {
+        "text": "DAY2 乌鲁木齐-S21沙漠公路-克拉美丽沙漠公园-途观乌伦古湖-将军山落日缆车+夕阳派对+雪山…",
+        "categories": [
+          "skiing",
+          "self_pay"
+        ],
+        "status": "excluded",
+        "evidence": "DAY2 乌鲁木齐-S21沙漠公路-克拉美丽沙漠公园-途观乌伦古湖-将军山落日缆车+夕阳派对+雪山蹦迪<开放安排，将军…"
+      },
+      {
+        "text": "住宿：乌鲁木齐 用餐：自理",
+        "categories": [
+          "self_pay"
+        ],
+        "status": "excluded",
+        "evidence": "住宿：乌鲁木齐 用餐：自理"
+      },
+      {
+        "text": "住宿：克拉玛依 用餐：自理",
+        "categories": [
+          "self_pay"
+        ],
+        "status": "excluded",
+        "evidence": "住宿：克拉玛依 用餐：自理"
+      },
+      {
+        "text": "含一套",
+        "categories": [
+          "included"
+        ],
+        "status": "included",
+        "evidence": "含一套"
+      },
+      {
+        "text": "民族服饰换装+9张精修",
+        "categories": [
+          "photo"
+        ],
+        "status": "ambiguous",
+        "evidence": "民族服饰换装+9张精修"
+      },
+      {
+        "text": "赛湖Tank跟车视频",
+        "categories": [
+          "photo"
+        ],
+        "status": "ambiguous",
+        "evidence": "赛湖Tank跟车视频"
+      },
+      {
+        "text": "无人机航拍视频",
+        "categories": [
+          "photo"
+        ],
+        "status": "ambiguous",
+        "evidence": "无人机航拍视频"
+      },
+      {
+        "text": "每日提供游玩攻略",
+        "categories": [
+          "included"
+        ],
+        "status": "included",
+        "evidence": "每日提供游玩攻略"
+      },
+      {
+        "text": "打卡赛湖落地签·跟车视频",
+        "categories": [
+          "photo"
+        ],
+        "status": "ambiguous",
+        "evidence": "打卡赛湖落地签·跟车视频"
+      }
+    ]
+  }
+]
