@@ -70,6 +70,7 @@ def parse(doc: Doc, fallback: TripProduct | None = None) -> TripProduct:
     if fallback is None:
         fallback = TripProduct(source_file=doc.name)
     merged = TripProduct.from_dict(fallback.to_dict())
+    rule_facts = dict(merged.facts)  # 规则引擎的状态/证据默认保留，LLM 未给出时不覆盖
     fields = set(TripProduct.__dataclass_fields__) - {"stays", "extractor", "source_file"}
     for k, v in data.items():
         if k in fields and v not in (None, "", [], {}):
@@ -77,6 +78,7 @@ def parse(doc: Doc, fallback: TripProduct | None = None) -> TripProduct:
     if data.get("stays"):
         from .schema import Stay
         merged.stays = [Stay(**s) for s in data["stays"] if isinstance(s, dict)]
+    merged.facts = rule_facts
     merged.extractor = "llm"
     merged.source_file = doc.name
     return merged

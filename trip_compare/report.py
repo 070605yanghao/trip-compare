@@ -5,8 +5,8 @@ from __future__ import annotations
 import html
 from datetime import datetime
 
-from .compare import matrix, unique_cells
-from .schema import TripProduct
+from .compare import NA, UNKNOWN_TEXT, facts_by_dim, matrix, unique_cells
+from .schema import STATUS_UNKNOWN, Fact, TripProduct
 
 _CSS = """
 *{margin:0;padding:0;box-sizing:border-box}
@@ -48,13 +48,45 @@ td.best{background:#eef4ff;color:#0e3fae;font-weight:600}
 footer{margin-top:36px;padding-top:16px;border-top:1px solid #e3e8f2;font-size:11.5px;color:#77809a}
 .badge{display:inline-block;font-size:10px;font-weight:700;padding:1px 7px;border-radius:5px;
        background:#fff1e6;color:#d95f04;margin-left:4px}
+/* 信息状态标记：✓含 / ✗不含 / ?未提及 / ~待确认 */
+.st{display:inline-block;font-size:10px;font-weight:700;padding:1px 6px;border-radius:5px;
+    margin-right:5px;vertical-align:1px}
+.st-included{background:#e6f6ec;color:#18794e}
+.st-excluded{background:#fdeaea;color:#b4232a}
+.st-unknown{background:#eef0f5;color:#8089a3}
+.st-ambiguous{background:#fff4e0;color:#b06a00}
+.ev{display:block;margin-top:5px;padding-left:8px;border-left:2px solid #dde4f2;
+    font-size:11px;color:#8a93ab;line-height:1.5}
+.legend{margin-top:10px;font-size:11.5px;color:#77809a}
+.legend b{font-weight:700}
 """
 
 _CARD_COLORS = ["#1557e8", "#6b4de6", "#f9741a", "#0ea5a5", "#c0392b", "#5b7f2a"]
 
 
+_LIST_DIMS = {"赠送项目", "需自理"}
+
+
 def _esc(s: str) -> str:
     return html.escape(s or "")
+
+
+def _status_chip(f: Fact) -> str:
+    if f.status == STATUS_UNKNOWN and not f.value:
+        return '<span class="st st-unknown">? 未提及</span>'
+    return f'<span class="st st-{f.status}">{f.mark} {f.label}</span>'
+
+
+def _evidence_html(f: Fact, limit: int = 2) -> str:
+    if not f.evidence:
+        return ""
+    items = "".join(f"<div>“{_esc(_clip_ev(e))}”</div>" for e in f.evidence[:limit])
+    return f'<span class="ev">{items}</span>'
+
+
+def _clip_ev(s: str) -> str:
+    s = (s or "").strip()
+    return s if len(s) <= 46 else s[:45] + "…"
 
 
 def render(products: list[TripProduct], title: str = "行程对比报告") -> str:
@@ -79,11 +111,26 @@ def render(products: list[TripProduct], title: str = "行程对比报告") -> st
         for p in products
     )
     body_rows = []
+    fmap = facts_by_dim(products)
     for ri, (dim, values) in enumerate(rows):
         cells = []
         for ci, v in enumerate(values):
-            cls = "best" if (ri, ci) in marks else ("na" if v == "—" else "")
-            cells.append(f'<td class="{cls}">{_esc(v)}</td>')
+            cls = "best" if (ri, ci) in marks else ("na" if v in (NA, UNKNOWN_TEXT) else "")
+            chip = ""
+            ev = ""
+            fl = fmap.get(dim) or []
+            if ci < len(fl):
+                f = fl[ci]
+                if f is not None:
+                    # 列表型字段（赠送/自理）只在「未提及」时打标记，
+                    # 否则「✓ 明确包含：晚餐自理」读起来是错的
+                    if dim in _LIST_DIMS:
+                        if f.status == STATUS_UNKNOWN:
+                            chip = _status_chip(f)
+                    elif f.status != STATUS_UNKNOWN or f.value:
+                        chip = _status_chip(f)
+                    ev = _evidence_html(f)
+            cells.append(f'<td class="{cls}">{chip}{_esc(v)}{ev}</td>')
         body_rows.append(f"<tr><th>{_esc(dim)}</th>{''.join(cells)}</tr>")
 
     return f"""<!DOCTYPE html>
@@ -111,6 +158,10 @@ def render(products: list[TripProduct], title: str = "行程对比报告") -> st
       <thead><tr><th>对比维度</th>{head_cells}</tr></thead>
       <tbody>{''.join(body_rows)}</tbody>
     </table></div>
+    <p class="legend">
+      <b>状态说明：</b>✓ 明确包含 ｜ ✗ 明确不包含 ｜ ? 原文未提及（不等于不包含）｜ ~ 表述模糊/自相矛盾，需人工确认。
+      灰色小字为对应原文依据，仅供核实；未提及项不参与独家项比较。
+    </p>
   </section>
   <footer>
     由 trip-compare 自动生成 ｜ 提取方式：{', '.join(sorted({p.extractor for p in products}))}
