@@ -5,8 +5,18 @@ from __future__ import annotations
 import html
 from datetime import datetime
 
-from .compare import NA, UNKNOWN_TEXT, facts_by_dim, matrix, unique_cells
-from .schema import STATUS_UNKNOWN, Fact, TripProduct
+from .compare import (
+    EXCLUDED_LABEL,
+    INCLUDED_LABEL,
+    NA,
+    UNKNOWN_TEXT,
+    cell_marks,
+    facts_by_dim,
+    matrix,
+    status_label,
+    summary_lines,
+)
+from .schema import STATUS_EXCLUDED, STATUS_INCLUDED, STATUS_UNKNOWN, Fact, TripProduct
 
 _CSS = """
 *{margin:0;padding:0;box-sizing:border-box}
@@ -59,39 +69,76 @@ footer{margin-top:36px;padding-top:16px;border-top:1px solid #e3e8f2;font-size:1
     font-size:11px;color:#8a93ab;line-height:1.5}
 .legend{margin-top:10px;font-size:11.5px;color:#77809a}
 .legend b{font-weight:700}
+td.diff{background:#f6f8fc;color:#3c4761;font-weight:600}
+td.unique{background:#eef4ff;color:#0e3fae;font-weight:600}
+.tag{display:inline-block;font-size:9.5px;font-weight:700;padding:0 5px;border-radius:4px;
+     margin-left:5px;vertical-align:1px}
+.tag-unique{background:#dbe7ff;color:#1557e8}
+.tag-diff{background:#eceff5;color:#7b8499}
+.sumbox{background:#fff;border:1px solid #e3e8f2;border-radius:14px;padding:16px 18px}
+.sumbox ul{list-style:none;margin:0;padding:0}
+.sumbox li{font-size:12.5px;color:#3c4761;padding:6px 0;border-bottom:1px dashed #eef2f9;line-height:1.6}
+.sumbox li:last-child{border-bottom:0}
+.sumbox li.warn{color:#b06a00}
 """
 
 _CARD_COLORS = ["#1557e8", "#6b4de6", "#f9741a", "#0ea5a5", "#c0392b", "#5b7f2a"]
 
 
-_LIST_DIMS = {"赠送项目", "需自理"}
+_LIST_DIMS = {"赠送项目", "需自理", "包含服务"}
 
 
 def _esc(s: str) -> str:
     return html.escape(s or "")
 
 
-def _status_chip(f: Fact) -> str:
+def _status_chip(f: Fact, dim: str = "", label: str = "") -> str:
+    """状态标记；文案按字段调整（赠送/自费不用「明确包含」这种笼统说法）。"""
     if f.status == STATUS_UNKNOWN and not f.value:
         return '<span class="st st-unknown">? 未提及</span>'
-    return f'<span class="st st-{f.status}">{f.mark} {f.label}</span>'
+    return f'<span class="st st-{f.status}">{f.mark} {label or f.label}</span>'
 
 
-def _evidence_html(f: Fact, limit: int = 2) -> str:
+def _evidence_html(f: Fact, limit: int = 3) -> str:
+    """原文依据。超出 limit 时明确写出总数，避免「显示了 4 项、只给 3 条依据」的错觉。"""
     if not f.evidence:
         return ""
     items = "".join(f"<div>“{_esc(_clip_ev(e))}”</div>" for e in f.evidence[:limit])
-    return f'<span class="ev">{items}</span>'
+    more = ""
+    if len(f.evidence) > limit:
+        more = f'<div>… 共 {len(f.evidence)} 条原文依据</div>'
+    return f'<span class="ev">{items}{more}</span>'
 
 
-def _clip_ev(s: str) -> str:
+_BRACKET_PAIR = {"（": "）", "(": ")", "【": "】", "[": "]", "《": "》", "<": ">"}
+
+
+def _clip_ev(s: str, n: int = 46) -> str:
+    """原文依据的展示截断：补「…」，并回退掉尾部未闭合的括号。
+
+    避免出现「川西环线 8 天 7 晚私家团（样品数据」这种残缺标题；
+    原始证据内容本身不修改，这里只是展示层的裁剪。
+    """
     s = (s or "").strip()
-    return s if len(s) <= 46 else s[:45] + "…"
+    if len(s) <= n:
+        return s
+    head = s[: n - 1]
+    # 用栈找出「最外层第一个没有闭合的开启括号」，从它之前裁断，
+    # 保证裁剪结果里所有括号都是配对的（只回退最后一段是不够的）
+    stack: list[int] = []
+    for i, ch in enumerate(head):
+        if ch in _BRACKET_PAIR:
+            stack.append(i)
+        elif ch in _BRACKET_PAIR.values() and stack:
+            stack.pop()
+    if stack:
+        head = head[: stack[0]]
+    return head.rstrip() + "…"
 
 
 def render(products: list[TripProduct], title: str = "行程对比报告") -> str:
     rows = matrix(products)
-    marks = unique_cells(rows)
+    marks = cell_marks(products, rows)
     now = datetime.now().strftime("%Y-%m-%d %H:%M")
 
     cards = []
@@ -115,23 +162,35 @@ def render(products: list[TripProduct], title: str = "行程对比报告") -> st
     for ri, (dim, values) in enumerate(rows):
         cells = []
         for ci, v in enumerate(values):
-            cls = "best" if (ri, ci) in marks else ("na" if v in (NA, UNKNOWN_TEXT) else "")
+            kind = marks.get((ri, ci))
+            cls = kind if kind else ("na" if v in (NA, UNKNOWN_TEXT) else "")
             chip = ""
             ev = ""
             fl = fmap.get(dim) or []
             if ci < len(fl):
                 f = fl[ci]
                 if f is not None:
-                    # 列表型字段（赠送/自理）只在「未提及」时打标记，
+                    # 列表型字段（赠送/自理/包含服务）只在「未提及」时打状态标记，
                     # 否则「✓ 明确包含：晚餐自理」读起来是错的
+                    lab = status_label(products[ci], dim)
                     if dim in _LIST_DIMS:
                         if f.status == STATUS_UNKNOWN:
-                            chip = _status_chip(f)
+                            chip = _status_chip(f, dim, lab)
                     elif f.status != STATUS_UNKNOWN or f.value:
-                        chip = _status_chip(f)
+                        chip = _status_chip(f, dim, lab)
                     ev = _evidence_html(f)
-            cells.append(f'<td class="{cls}">{chip}{_esc(v)}{ev}</td>')
+            tag = ""
+            if kind == "unique":
+                tag = '<span class="tag tag-unique">独家</span>'
+            elif kind == "diff":
+                tag = '<span class="tag tag-diff">差异</span>'
+            cells.append(f'<td class="{cls}">{chip}{_esc(v)}{tag}{ev}</td>')
         body_rows.append(f"<tr><th>{_esc(dim)}</th>{''.join(cells)}</tr>")
+
+    summary = "".join(
+        f'<li class="{"warn" if line.startswith("提示") else ""}">{_esc(line)}</li>'
+        for line in summary_lines(products)
+    )
 
     return f"""<!DOCTYPE html>
 <html lang="zh-CN">
@@ -144,7 +203,8 @@ def render(products: list[TripProduct], title: str = "行程对比报告") -> st
 <body>
 <header><div class="hwrap">
   <h1>{_esc(title)} · <span>共同点 &amp; 差异点</span></h1>
-  <p class="sub">自动从 {len(products)} 份产品说明书中提取结构化字段，生成对比矩阵。高亮单元格 = 该维度上的独家项。</p>
+  <p class="sub">自动从 {len(products)} 份产品说明书中提取结构化字段，生成对比矩阵；
+    并区分「独家服务」与「属性差异」，每条结论附原文依据。</p>
   <p class="meta">生成时间：{now} ｜ trip-compare</p>
 </div></header>
 <div class="wrap">
@@ -153,14 +213,20 @@ def render(products: list[TripProduct], title: str = "行程对比报告") -> st
     <div class="cards">{''.join(cards)}</div>
   </section>
   <section>
-    <div class="stitle"><div class="bar"></div><h2>对比矩阵</h2><small>★ 蓝底 = 独家项</small></div>
+    <div class="stitle"><div class="bar"></div><h2>核心差异摘要</h2><small>仅陈述提取到的事实</small></div>
+    <div class="sumbox"><ul>{summary}</ul></div>
+  </section>
+  <section>
+    <div class="stitle"><div class="bar"></div><h2>对比矩阵</h2><small>独家 = 有双向证据 ｜ 差异 = 属性不同</small></div>
     <div class="tblbox"><table>
       <thead><tr><th>对比维度</th>{head_cells}</tr></thead>
       <tbody>{''.join(body_rows)}</tbody>
     </table></div>
     <p class="legend">
-      <b>状态说明：</b>✓ 明确包含 ｜ ✗ 明确不包含 ｜ ? 原文未提及（不等于不包含）｜ ~ 表述模糊/自相矛盾，需人工确认。
-      灰色小字为对应原文依据，仅供核实；未提及项不参与独家项比较。
+      <b>状态说明：</b>✓ 明确包含/赠送/提供 ｜ ✗ 明确不包含、需自理或需自费 ｜ ? 原文未提及（不等于不包含）｜ ~ 表述模糊或自相矛盾，需人工确认。
+      <b>标记说明：</b><span class="tag tag-unique">独家</span> 仅在该产品明确包含、且其他产品明确不包含时给出；
+      <span class="tag tag-diff">差异</span> 只表示客观属性取值不同，不代表某产品独有或更优。
+      灰色小字为对应原文依据；未提及项不参与独家判定。
     </p>
   </section>
   <footer>
