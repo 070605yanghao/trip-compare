@@ -93,7 +93,12 @@ tests/               # 最小测试
 python tests/test_parser.py      # 原有：字段提取基本断言（2 个）
 python tests/test_facts.py       # 信息状态判定（含/不含/未提及/模糊/重复，12 个）
 python tests/test_extraction.py  # 提取与分类（去重/拆分/误判/独家/依据/截断/字段语义/真实 PDF 加固/回归，42 个）
+python scripts/check-docs-drift.py  # 开发文档一致性校验（改 devdocs/ 后必跑）
 ```
+
+## 开发流程
+
+本仓库用一套文档驱动的开发流程（改编自 claude-dev-system）：需求与决策在 `devdocs/`，每个功能有规格文件与三道人工审批闸门，规则见根目录 `CLAUDE.md`。参与开发（人或 AI）请先读它。
 
 `test_facts.py` 重点防回归：明确不包含不能被写成「自理」；未提及必须显示「未提及」；「含 X，X 自理」必须判模糊而不是二选一；自理项不能混进赠送项。
 
