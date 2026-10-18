@@ -32,7 +32,10 @@ cp output/beijiang-data.json   docs/beijiang-data.json
 
 ## 已知坑
 
-- 本地与远端历史 SHA 分叉（API 推送所致），见 tasks.md T-002。
+- 本机 `git push` 不可用，只能走 API。两种 API 推送方式，按场景选：
+  - **日常增量**：`PUT /contents/<path>` 逐文件写（base64 + 上次 sha），简单但每个文件一个提交，历史会变长。
+  - **对齐历史**：`POST /git/blobs` → `POST /git/trees` → `POST /git/commits` → `PATCH /git/refs/heads/main`（force）。只要 tree / parents / author / committer / message 与本地一致，SHA 就会逐字节命中，远端历史可与本地完全统一（T-002 就是这么解决的）。
+  - 日期必须写成 `+08:00`，写成 `+0800` 会被 422 拒。
 - Pages 构建需要 1-3 分钟，push 后立刻看是旧版属正常。
 - PowerShell 重定向 git 输出会把 UTF-8 中文读成 GBK 乱码——验证提交信息用 Python subprocess 按 utf-8 解码。
 
